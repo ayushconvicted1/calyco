@@ -1,0 +1,133 @@
+.aboutus-detail{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 1px 70px 0px;
+}
+.aboutus-detail img{
+    width: 38rem;
+    height: 34rem;
+}
+
+.aboutus-detail div{
+    width: 42%;
+    /* padding-right: 100px; */
+}
+
+.aboutus-detail div h1{
+    font-size: revert;
+    font-weight: 500;
+    font-family: math;
+    padding-bottom: 23px;
+}
+.aboutus-detail div p{
+    font-family: system-ui;
+    font-size: 19px;
+    word-spacing: 6px;
+}
+
+.Our-culture{
+    background: #dbd5cd;
+    width: 17%;
+    height: -moz-fit-content;
+    /* height: fit-content; */
+    padding: 63px 62px 78px;
+    padding: 28px 37px 37px 31px;
+    margin: 4px 50px 60px 50pX;
+    min-height: 180px;
+}
+
+
+.Our-culture h3{
+    font-size: 27px;
+    font-weight: 500;
+    font-family: serif;
+    text-align: center;
+}
+.Our-culture p{
+    padding-top: 19px;
+    /* font-family: sans-serif; */
+    word-break: break-all;
+    /* word-spacing: 5px; */
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.outculture-items{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-section h3{
+    font-size: 19px;
+    font-family: math;
+    font-weight: 500;
+    padding: 5px 0px 12px 23px
+}
+
+.aboutus-paragraph{
+    background: #dbd5cd;
+    text-align: justify;
+    padding: 51px 35px 40px 35px;
+    margin: 9px 53px 50px 50px;
+    font-size:25px;
+    font-family: math;
+    word-spacing: 4px;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-section{
+   background-color:#e4e0db;
+}
+
+    
+
+
+@media (max-width: 720px){
+.Our-culture {
+    flex-direction: column;
+    width: 100%;
+}
+
+.aboutus-paragraph{
+    font-size: 3.3vw;
+}
+.aboutus-detail img{
+    display: none;
+}
+.aboutus-detail{
+    padding-left: 33px;
+    padding-right: 33px;
+    text-align: justify;
+    display: block;
+    word-break: break-all;
+   
+}
+.aboutus-detail div{
+    width: 100%;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+   .aboutus-detail div{
+    width: 77%;
+   }
+   .aboutus-detail img{
+    display: none;
+}
+.Our-culture{
+    width: unset;
+}
+    
+  }

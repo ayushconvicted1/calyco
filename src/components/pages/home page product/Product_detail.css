@@ -1,0 +1,402 @@
+.home-product-image {    
+  width: 23rem;
+  height: 23rem;
+  border-radius: 42rem;
+}
+
+.homepage-products-info {
+  padding-left: 60px;
+  width: 56%;
+}
+
+.homepage-products-info h3 {
+  width: 86%;
+  padding-top: 20px;
+}
+
+.homepage-products-info .paras {
+  font-size: 18px;
+  padding: 20px 1px 20px 0px;
+}
+
+.productdetails {
+  display: flex;
+  background-color: #dbd5cd;
+  height: 23rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  padding: 35px 50px 35px 50px;
+  margin-top: 53px;
+}
+
+.productdetails button {
+  background-color: transparent;
+  float: left;
+  width: 9rem;
+  border: 2px solid black;
+  height: 3rem;
+  font-size: 15px;
+}
+
+.box2 img {
+  width: 21rem;
+  height: 31rem;
+  border-radius: 2rem;
+}
+
+.box1 img,
+.box2 img {
+  height: 26rem;
+  /* width: calc(100% - 40px); */
+  width: 100%;
+  border-radius: 2rem;
+  display: block;
+  margin-bottom: 13px;
+
+
+
+}
+
+
+.box1,
+.box2 {
+    overflow-y: scroll;
+    width: 400px;
+    white-space: nowrap;
+    padding-right:20px;
+  
+}
+
+.box1::-webkit-scrollbar,
+.box2::-webkit-scrollbar {
+  /* background-color: transparent; */
+  display: none;
+}
+
+.box1::-webkit-scrollbar-thumb,
+.box2::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.box1::-webkit-scrollbar,.box2::-webkit-scrollbar {
+  width:0px; /* Set the width of the scrollbar */
+}
+
+
+.image-box .imagebox img {
+  width: 100%;
+  height: 35rem;
+  border-radius: 3rem;
+  padding: 4px 0px 4px 4px;
+}
+
+.imagebox{
+  padding: 10px 20px 10px 10px;
+  width: 46rem;
+}
+
+.image-box {
+  overflow: hidden;
+  display: flex;
+  height: 36.2rem;
+  width: 90%;
+  margin: auto;
+  border-radius: 57px;
+  background-color: #EBEFF0;
+}
+
+.Rightpartsection {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  width: 31rem;
+  height: 8rem;
+  margin-bottom: 87px;
+  
+
+}
+
+.Rightpartsection:hover{
+ 
+  .vertical-line{
+    background-color: #9C5755;
+    margin-left: 14px;
+  }
+  
+}
+
+
+.Rightpartsection img {
+  width: 6rem;
+  height: 6rem;
+  margin-top: 12px;
+  filter: grayscale(100%);
+  margin-right: 25px;
+}
+
+.right-section-content {
+  padding-left: 13px;
+  padding-top: 10px;
+  padding: 10px 0px 0px 13px;
+  width: 100%;
+}
+
+.right-section-content h3{
+  font-weight: lighter;
+ font-family:Neology-Deco-W03-Medium;
+    font-size: 28px;
+}
+
+.right-section-content p {
+  padding-top: 7px;
+  color: #716666;
+  font-size: 19px;
+  font-family:Neology-Deco-W03-Regular;
+}
+.vertical-line {
+  background-color: #D9D9D9;
+  border-radius: 3px;
+  margin-right: 23px;
+  width: 16px;
+  max-width: 10px;
+  transition: 0.3s;
+  height: 11rem;
+    display: flex;
+    align-self: center;
+} 
+
+details>summary {
+  position: relative;
+  display: flex; 
+  list-style: none;
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 200;
+  transition: 0.5s ;
+
+}
+ 
+/*  */
+
+/*  */
+
+
+@font-face {
+font-family: 'Neology-Deco-W03-Regular';
+src: url('../../../Fonts/OnlineWebFonts_COM_b67db2fceb09b83e212a59fc81189624/Neology-Deco-W03-Regular/Neology\ Deco\ W03\ Regular.ttf');
+}
+
+.question-box{
+font-family: 'Neology-Deco-W03-Regular';
+}
+
+.question-box h1{
+  font-size: 43px;
+  font-weight: lighter;
+  margin-bottom: 12px;
+}
+
+details summary{
+  cursor: pointer;
+ 
+}
+
+
+details > summary::after {
+  content: '';
+  background: url('../../images/plus_icon.png') center no-repeat;
+  height: 3rem;
+  width: 3rem;
+  background-size: 41px;
+  border-radius: 50%;
+  /* filter: invert(1); */
+  
+  
+}
+
+
+/* Style the details tag */
+details {
+  padding: 30px 0px 30px 0px;
+  -webkit-tap-highlight-color: transparent;
+  transition: 0.5s;
+  
+}
+details:nth-child(2){
+  border-bottom: none;
+} 
+
+/* Style the content within the details tag */
+details p {
+  margin-top: 10px;
+  /* width: 72rem; */
+  padding-left: 40rem;
+  transition: 0.3s;
+  font-size: 23px;
+ 
+}
+
+details[open]> summary::after {
+  background: url('../../images/minus_icon.png') center no-repeat;
+  background-size: 41px;
+ 
+}
+
+
+
+summary h2{
+  display: flex;
+  font-size: 45px;
+  align-items: center;
+  font-weight: lighter;
+}
+
+details p {
+color:black;
+}
+
+@media only screen and (max-width: 767px) {
+  .Rightpartsection {
+    width: 100%;
+    font-size: 15px;
+    height: 95px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .vertical-line{
+    width: 9px;
+    margin-right: 12px;
+    height: 7rem;
+  }
+  
+  .right-section-content h3{
+      font-size: 20px;
+  }
+
+  .right-section-content p{
+    font-size: 17px;
+  }
+
+  .Rightpartsection img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 4px;
+    margin-top: 0px;
+  }
+
+  
+  summary h2 {
+    font-size: 19px;
+  }
+
+  details {
+    padding: 20px 0px 20px 0px;
+  }
+
+  details > summary::after {
+    max-width: 25px;
+    max-height: 25px;
+    background-size: 20px;
+  }
+
+  details p{
+    font-size: 14px;
+    text-align: justify;
+    width: inherit;
+    padding-left: 0px;
+  }
+
+  details[open]> summary::after {
+    background-size: 20px;
+}
+
+
+  .image-box{
+    overflow: hidden;
+    max-height: 195px;
+  border-radius: 16px;
+  padding-right: 5px;
+  }
+  .imagebox{
+    width: 70%;
+    padding: 5px 5px 5px 5px;
+    padding-right: 0px;
+    
+  }
+
+  .image-box .imagebox img {
+    height:185px;
+    border-radius: 16px;
+    padding: 0px;
+}
+
+
+  .box1 img,
+  .box2 img {
+    height: 117px;
+    width: 100%;
+    border-radius: 1rem;
+    margin: 0px;
+    padding-top: 4px;
+
+  }
+
+  .box1,
+  .box2 {
+    max-width: 80px;
+    /* padding-left: 4px;
+   
+    margin-left: 0px; */
+    /* margin-left: 10px; */
+    /* margin-left: 10px; */
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-left: 5px;
+
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .box1 img,
+  .box2 img {
+    height: 261px;
+    width: 164px;
+    width: 100%;
+    /* margin-bottom: 1px; */
+  } 
+
+  .box1,
+  .box2 {
+    display: block;
+    width: 30%;
+    border-radius: 1rem;
+    /* margin-right: -14px; */
+    padding-right: 10px;
+  }
+
+  .image-box .imagebox {
+    width: 61%;
+    height: 30rem;
+    padding: 5px 10px 5px 5px;
+    /* margin-right: 4px; */
+  }
+
+  .image-box {
+    height: 27rem;
+    border-radius: 16px;
+    padding: 5px 2px 5px 5px;
+  }
+  .image-box .imagebox img{
+    height:411px;
+    border-radius: 16px;
+  }
+
+  details p{
+    width: inherit;
+    padding-left:0px;
+
+  }
+}

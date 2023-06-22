@@ -1,0 +1,833 @@
+
+
+.Refratherm-aboutus{
+    height: 16rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0px;
+    background-color: #dbd5cd;
+
+}
+
+.Refratherm-aboutus img{
+    width: 10rem;
+    height: 9rem;
+}
+
+/* footer */
+
+footer{
+    background-color:#8A9BA4;
+    color: white;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 21px;
+    padding-left: 20px;
+    font-family: 'Neology-Deco-W03-Regular';
+ 
+}
+
+footer div{
+    display: block;
+    height: 8rem;
+    font-size: 18px;
+}
+
+.Follow-us .linkdin{
+  font-size: 34px;
+}
+
+footer li{
+    list-style-type:none;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+footer li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+footer  li:hover{
+    padding-left: 5px;
+    transition: all 0.3s ease;
+    width: 20%;
+
+}
+
+.footer-bottam-heading {
+  width: 100%;
+  background-color: #8a9ba4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  padding: 0;
+  padding-bottom: 58px;
+  overflow: hidden; /* Add overflow property to hide any overflowing content */
+}
+
+.footer-bottam-heading h1 {
+  color: #95a4ac;
+  font-family: 'Leamington-Bold';
+  font-size: 30vw; /* Adjust the font size using viewport units */
+  margin: 0;
+  line-height: 1;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap; /* Prevent line breaks within the text */
+}
+
+
+footer h2{
+    font-size: 27px;
+    font-weight: bold;
+    
+}
+
+
+footer div hr{
+    width: 37rem;
+    margin: 8px 0px 17px;
+    height: 0.1px;
+    background: white;
+}
+
+footer .get-help hr{
+    margin: 8px 0px 24px;
+}
+
+
+/* navbar */
+.navbar {
+  background-color:white;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  color: black;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+ 
+
+} 
+
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 21px;
+  background: none;
+  border: none;
+  padding-right: 1.5rem;
+}
+
+
+
+.nav-menu {
+  background-color: white;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  transition: 0.6s all ease;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  transition: 850ms;
+  color: black;
+  font-size: 21px;
+  font-family: system-ui;
+  cursor: pointer;
+}
+
+.nav-menu.active {
+  left: 78%;
+    transition: 350ms;
+    width: 22%;
+    z-index: 5;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px
+}
+
+.navbar .navbar-list-heading{
+  padding-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* this button is not used */
+
+.left-part button{
+  padding: 12px 24px 12px 24px;
+  background-color: #9C5755;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  font-size: 22px;
+  margin-top: 40px;
+  font-family: 'Neology-Deco-W03-Regular';
+  display: none;
+  align-items: center;
+} 
+
+@font-face {
+  font-family: 'Neology-Deco-W03-Regular';
+  src: url('../../Fonts/OnlineWebFonts_COM_b67db2fceb09b83e212a59fc81189624/Neology-Deco-W03-Regular/Neology\ Deco\ W03\ Regular.ttf') format(truetype);
+}
+
+.left-part h1{
+  font-size: 90px;
+  font-weight: 500;
+  font-family: 'Neology-Deco-W03-Regular';
+}
+.explore-products{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 90px;
+}
+
+
+
+.left-part{
+  width: 47%;
+}
+
+
+.faq-question h1{
+  font-size: 80px;
+  font-weight: lighter;
+  margin-bottom: 12px;
+  color:#9C5755
+}
+
+.faq-question{
+  margin: auto;
+  width: 80%;
+  margin-bottom: 40px;
+  font-family: 'Neology-Deco-W03-Regular';
+}
+
+.custom-link{
+  text-decoration: none;
+  color: black;
+}
+
+.custom-footer-Link{
+  text-decoration: none;
+  color: inherit; 
+}
+
+@font-face {
+  font-family: 'Leamington-Bold';
+  src: url('../../Fonts/OnlineWebFonts_COM_d28b46ab03a6fd61b8bd34da3f68ecf3/Leamington-Bold/Leamington-Bold.ttf');
+}
+
+
+
+ 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Set the desired background color and opacity */
+  z-index: 1;
+  opacity: 0; /* Initially hide the overlay */
+  transition: opacity 0.3s ease; /* Add a transition effect for smooth opacity changes */
+  pointer-events: none; /* Disable pointer events on the overlay to allow interaction with elements underneath */
+}
+
+.overlay.visible {
+  opacity: 1; /* Show the overlay with full opacity when necessary */
+  pointer-events: auto; /* Enable pointer events on the overlay to prevent interaction with elements underneath */
+}
+
+.top-blank-bar{
+  height: 40px;
+  width: 100%;
+  background-color: #8A9BA4;
+}
+
+.nav-menu {
+  /* Other existing styles */
+  z-index: 11; /* Ensure the menu appears above the overlay */
+}
+
+
+.nav-text .after img{
+  float: right;
+    height: 14px;
+    width: 9px;
+    margin: 5px 1px 0px 0px;
+}
+
+
+.navbar-list-heading .heading-1{
+  font-family: 'Leamington-Bold';
+  font-size: 23px;
+  font-weight: 100;
+  padding-bottom: 4px;
+}
+
+.navbar-list-heading .heading-2{
+  font-size: 19px;
+  font-weight: 100;
+  font-family: 'monospace';
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icons{
+  padding-right: 30px;
+  color: black;
+  height: 20px;
+}
+
+  
+
+
+
+.nav-text{
+  position: relative;
+  cursor: pointer;
+  z-index: 99999;
+  list-style-type: none;
+  font-size: 19px;
+  font-family: 'Neology-Deco-W03-Regular';
+  color: black;
+  padding: 14px;
+  margin-right: 13px;
+}
+
+.nav-subtext {
+  font-size: 19px;
+  font-family: 'Neology-Deco-W03-Regular';
+  /* margin-bottom: 3px; */
+  padding: 10px 0px 10px 10px;
+  width: 16rem;
+}
+
+
+.nav-text:hover,.nav-subtext:hover {
+  background-color: #e6eaed;
+  border-radius: 10px;
+}
+
+
+
+.sub-menu{
+  background-color: #1f1f1f;
+  display: block;
+  z-index: 99999;
+  padding: 10px 0px;
+  left: 100%;
+  min-width: 200px;
+
+}
+
+.sub-menu li{
+  line-height: 30px;
+  z-index: 99999;
+color: black;}
+
+
+
+.nav-texthide{
+  margin-top: -48px;
+  list-style-type: none;
+ 
+}
+
+.nav-text .hide:hover{
+background-color: none;
+}
+
+
+
+
+
+.nav-text .sub-menu li {
+  padding: 2px 3px;
+  list-style-type: none;
+}
+
+
+.nav-text .sub-menu li a {
+  width: auto;
+}
+
+
+
+
+
+.nav-menu-items svg{
+  font-size: 30px !important;
+}
+
+.nav-menu-items .cross{
+  font-size: 32px;
+  float: right;
+  padding-right: 31px;
+}
+
+
+.nav-text .sub-menu li {
+  padding: 8px 16px;
+}
+
+.nav-text .sub-menu li a {
+  width: auto;
+}
+
+.nav-menu-items {
+  width: 100%;
+  color: black;
+  padding-left: 25px;
+  padding-top: 0px;
+  position: relative;
+
+}
+
+
+
+.navbar-toggle {
+  width: 83%;
+  height: 88px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 28px;
+  font-family: 'Neology-Deco-W03-Regular';
+  font-weight: lighter;
+  margin-left: 0px;
+  background: transparent;
+} 
+
+.sub-menu{
+  position: relative;
+  cursor: pointer;
+  z-index: 99999;
+  left: 1rem;
+  width: 6%;
+  background: transparent;
+}  
+
+
+.product-info{
+  background: #dbd5cd;
+  width: 40%;
+  margin: 17px;
+  padding: 2px 28px 24px 28px;
+  text-align: left;
+}
+.product-info h3{
+  font-family: math;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 14px 0px 14px;
+}
+.product-info .application{
+  list-style-type:none;
+}
+
+.product-info p{
+  padding-bottom: 12px;
+  font-family: math;
+    font-weight: normal;
+    font-size: 13px;
+}
+.product-info hr{
+  height: 1px;
+  background: #b0b0b0a1;
+  border: none;
+}
+
+
+.product-info hr:nth-of-type(1){
+  background-color: black;
+}
+
+.product-info .type-product li{
+  list-style-type:decimal ;
+  padding-bottom: 6px;
+}
+.product-info .type-product{
+  padding-bottom: 5px;
+}
+
+/* p:nth-child(2){
+  font-size: 20px;
+ 
+} */
+
+.product-main{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.product{
+  background-color: #e4e0db;
+}
+.product-main img{
+  width: 23rem;
+  height: 23rem;
+  border-radius: 11rem;
+} 
+
+.box-titles{
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 26px 0px 15px 37px;
+  background-color: rgba(157, 157, 157, 0.168);
+}
+
+
+@font-face {
+  font-family: 'Neology-Deco-W03-Medium';
+  src: url(../../Fonts/OnlineWebFonts_COM_609cf5310e7655e68a5f8b00c1407832/Neology-Deco-W03-Medium/Neology\ Deco\ W03\ Medium.ttf) format('truetype');
+}
+
+.banner-box {
+  position: relative;
+  height: 44.75rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner-box::before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/pexels-joseph-russo-15340288.jpg');
+  background-size: cover;
+  filter: brightness(0.9);
+}
+
+
+
+.text-box {
+  position: absolute;
+  top: 141px;
+  left: 207px;
+  color: white;
+  text-align: left;
+  font-family: 'Neology-Deco-W03-Medium';
+  font-weight: lighter;
+  width: 53rem;
+}
+
+.text-box h1 {
+  font-size: 68px;
+  width: 78%;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+.text-box p{
+  font-size:40px;
+    /* padding-top: 17px; */
+    padding-left: 5px;
+    width: fit-content;
+    margin: 0px;
+}
+
+ 
+
+.faq-box{
+  display: flex;
+  background-color:#dbd5cd;
+  margin: 1px 31px 24px 44px;
+  width: 59%;
+  height: fit-content;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.faq-box .number{
+  width: 50%;
+  height: fit-content;
+  font-size: 85px;
+  text-align: center;
+  margin: 51px;
+  padding: 50px 17px 50px 13px;
+}
+
+
+.questions{
+  margin: auto;
+}
+
+.questions h3{
+  font-size: 23px;
+  padding-bottom: 13px;
+  font-family: math;
+}
+
+.questions ol{
+  padding-right: 20px;
+  color:#888;
+}
+.questions li{
+  list-style-type: disc;
+  padding-top: 5px;
+    padding-right: 10px;
+    font-family: system-ui;
+} 
+
+.faq-box:hover,
+.faq-box:hover .number {
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 767px) {
+ 
+  .navbar{
+    height: 54px;
+  } 
+
+  .nav-menu.active{
+    left: 25%;
+    width: 75%;
+  }
+.navbar-icons{
+  width: 20px;
+  height: 20px;
+}
+
+
+   .footer-bottam-heading {
+    /* height: 10rem; */
+    padding-bottom: 27px;
+  }
+  /* .footer-bottam-heading h1{
+    font-size: 6rem;
+    line-height: normal;
+  }    */
+
+ .navbar-list-heading .heading-1{ 
+    font-size: 24px;
+    padding-left: 14px;
+
+  } 
+ 
+
+  .faq-box{
+    width: 90%;
+    padding-bottom: 2rem;
+  }
+  .questions h3{
+    text-align: center;
+  }
+ .faq-box .number{
+    padding-left: 2rem;
+  }
+  footer,.faq-box{
+    display: block;
+   }
+   .Refratherm-aboutus img{
+    display: none;
+  }
+  .product-info{
+    width: 76%;
+  }
+  .product-main{
+    text-align: center;
+    display:inline-block;
+  }
+
+  
+    
+    
+  .product-main img{
+    width: 17rem;
+    height: 17rem;
+  }
+  .navbar .navbar-list-heading,.menu-bars{
+    padding-left: 0px;
+  }
+  .explore-products{
+    display: block;
+    padding-left: 23px;
+    margin-top: 38px;
+  }
+
+  footer div hr{
+    width: initial;
+    margin-right: 23px;
+  }
+ 
+  
+
+  .text-box h1 {
+    width: 18rem;
+    font-weight: lighter;
+    font-size: 34px;
+
+} 
+.banner-box{
+  height: 13rem;
+}
+
+
+.text-box{
+  top: 28px;
+  left: 17px;
+  width: 18rem;
+}
+.text-box p{
+  padding-top: 81px;
+  color: black;
+  font-size: 15px;
+} 
+.text-box p span{
+  color: #9C5755;
+  margin-left: 0px;
+}
+.left-part h1{
+  width: 18rem;
+  height: 10rem;
+  font-size: 42px;
+  padding: 0px;
+}
+
+.left-part button{
+  width: 12rem;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+
+
+.Right-part{
+  padding-top: 60px;
+}
+
+.faq-question h1{
+  font-size: 34px;
+}
+
+.Follow-us .linkdin{
+  font-size: 24px;
+  padding-top: 2px;
+}
+footer h2{
+ font-size: 22px;
+}
+
+footer li {
+  font-size: 15px;
+}
+
+footer .Follow-us{
+  display: inline-flex;
+  height: 3rem;
+  padding-top: 35px;
+}
+
+footer .Follow-us hr{
+  display: none; 
+}
+
+footer .Follow-us li{
+  padding-left: 15px;
+}
+
+footer .Follow-us h2::after{
+  content: ':';
+}
+
+
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+  .faq-box {
+    width: 90%;
+  }
+  /* .footer-bottam-heading h1{
+    font-size: 15rem;
+    line-height: 260px;
+  }
+
+  .footer-bottam-heading{
+    height: 21rem;
+  } */
+ 
+  .Refratherm-aboutus img{
+    display: none;
+  }
+.product-main{
+  display: inline-block;
+  text-align: center;
+}
+.product-info{
+  width: 89%;
+}
+.nav-menu.active{
+  width: 44%;
+left: 56%;}
+
+.navbar-icons{
+  width: 20px;
+  height: 20px;
+}
+.navbar .navbar-list-heading,.menu-bars{
+  padding-left: 26px;
+}
+
+
+.text-box{
+  left: 87px;
+  width: 35rem;
+}
+.text-box h1{
+  font-size: 54px;
+  width: 33rem;
+}
+.text-box p{
+  font-size: 24px;
+}
+footer div hr{
+  width: 20rem;
+}
+.left-part{
+  width: 41%;
+    padding-left: 20px;
+}
+.explore-products {
+  display: block;
+  padding-left: 70px;
+  padding-bottom: 39px;
+  margin-top: 9rem;
+}
+.left-part{
+  width: 74%;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+}

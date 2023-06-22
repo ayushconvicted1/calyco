@@ -1,0 +1,363 @@
+.cards{
+    background-color:white;
+    padding: 0px 0px 68px 97px;
+}
+
+@font-face {
+  font-family: 'Neology-Deco-W03-Light';
+  src: url('../Fonts/OnlineWebFonts_COM_6f5e9dd4a11636a61138492f64dff855/Neology-Deco-W03-Light/Neology\ Deco\ W03\ Light.ttf') format(truetype);
+}
+
+.cards .offer-product{
+  font-size: 70px;
+  font-family: 'Neology-Deco-W03-Regular';
+  padding-bottom: 16px;
+  padding-top: 44px;
+  margin: 0px;
+  padding-left: 14px;
+}
+
+.cards  div ul li{
+    width: 311px !important;
+}
+
+
+
+.cards {
+    position: relative;
+    margin: 0px;
+    overflow: hidden;
+} 
+   
+.item-card .bottam-text{
+  display: flex;
+  align-items: flex-end;
+  height: 66px;
+  padding-right: 68px;
+  padding-left: 17px;
+  justify-content: start;
+  /* background: antiquewhite; */
+  margin-top: 39px;
+}
+
+
+  
+  .scroll-bar-main {
+    position: relative;
+    height: 3px;
+    background-color: #8a9ba457;
+    margin-bottom: 1rem;
+    top: 40px;
+  }
+  
+  .scroll-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #8A9BA4;
+    width: 0;
+    transition: width 0.3s;
+  }
+  
+  .scroll-arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Other styles for the scroll arrows container */
+  }
+  
+  .scroll-arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    /* Other styles for the scroll arrows */
+  }
+  
+
+
+
+
+.item-card p{
+       /* padding-top: 39px; */
+       font-family: 'Neology-Deco-W03-Regular';
+       font-size: 19px;
+       /* padding-top: 89px; */
+       color: black;
+    
+}
+
+.item-card {
+  background-color: #f7f7f7;
+  padding: 7px 0px 0px;
+  height: 16rem;
+  width: 16rem;
+  border-radius: 13px;
+  margin-left: 14px;
+  transition: 0.5s;
+}
+
+
+
+.item-card:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(0px 2px 3px gray);
+
+  
+}
+
+
+.item-card img{
+  width: 218px;
+  height: 124px;
+  border-radius: 13px;
+  margin: 0px 8px 0px 8px;
+  max-width: -webkit-fill-available;
+}
+
+
+
+/*  */
+
+
+
+.carousel-items {
+  height: 320px;
+  width: 92.7%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  padding-bottom: 0px;
+  gap: 14px;
+  padding-top: 20px;
+} 
+
+.carousel-items::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as needed */
+  height: 4px; 
+  -webkit-appearance: none;
+} 
+
+.carousel-items::-webkit-scrollbar-track {
+  background-color: #EBEFF0; /* Light gray */
+  -webkit-appearance: none;
+  
+}
+
+.carousel-items::-webkit-scrollbar-thumb {
+  background-color: #8A9BA4; /* Gray */
+ max-width: 5px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+
+
+
+
+
+
+.carousel-items > * {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-snap-coordinate: 0% 0%;
+  scroll-snap-type: y mandatory;
+}
+
+.carousel-button-group {
+  position: relative;
+  bottom: 241px;
+}
+
+.carousel-button-prev,
+.carousel-button-next {
+ 
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #8A9BA4;
+  color: white;
+  padding: 36px 6px 29px 6px;
+  transition: 0.5s;
+  font-size: 40px;
+  
+}
+
+.carousel-button-prev svg,
+.carousel-button-next svg{
+  stroke-width:  1 !important;
+}
+
+
+
+
+
+.carousel-button-prev {
+  /* right: 92.6rem; */
+  left: -27px;
+}
+
+.carousel-button-next {
+  right: -27px;
+}
+
+.carousel-button-prev.shifted {
+  transform: translateX(-5px); /* Adjust the shift distance as needed */
+  left: 10px;
+}
+
+.carousel-button-next.shifted {
+  transform: translateX(5px); /* Adjust the shift distance as needed */
+}
+
+
+
+
+
+.carousel-button-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.carousel-button-prev.disabled,
+.carousel-button-next.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+} 
+
+/* .item-card:hover .carousel-button-prev {
+  left: -5px;
+  background-color: greenyellow;
+}
+
+.item-card:hover + .carousel-button-next {
+  left: 100px;
+  background-color: yellow;
+} */
+
+
+
+
+@media (max-width: 767px) {
+    .cards{
+        padding-left: 14px;
+        padding-bottom: 0px;
+        margin-top: 55px;
+        margin-bottom: 20px;
+    }
+    .cards .offer-product{
+      display: none;
+    }
+  
+     .Card-info{
+        width: 65%;
+     }
+   .item-card{
+    padding: 4px 4px 0px 4px;
+    /* height: auto; */
+    max-width: 95px;
+    max-height: 100px;
+    border-radius: 11px;
+    margin-right: 0px;
+    margin-left: 7px;
+
+     }
+   .carousel-items{
+    height: 0px;
+    padding-bottom: 138px;
+    gap: 0px;
+   }
+
+   .carousel-button-prev,.carousel-button-next{
+    padding: 19px 4px 15px 6px;
+    font-size: 40px;
+   }
+   .carousel-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* position: relative; */
+    bottom: 100px;
+  }
+  
+  
+   .item-card img{
+    max-width: 79px;
+    max-height: 43px;
+    border-radius: 11px;
+    margin: 0px;
+   }
+.item-card .bottam-text{
+  margin: 0px;
+  height: 45px;
+  margin-top: 0px;
+  padding-right: 0px;
+  padding-left: 3px;
+
+}
+   
+
+   .cards div ul li{
+    width: 104px !important;
+   }
+   .item-card p{
+    font-size: 10px;
+
+   }
+   .scroll-bar-main{
+    top: 25px;
+   }
+  
+  
+}
+  
+  
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+      .cards{
+        padding-bottom: 0px;
+      
+    }
+     .Card-info{
+        width: 65%;
+     }
+  .item-card img{
+    width: 168px;
+    height: 104px;
+    border-radius: 20px;
+  }
+
+  .item-card{
+    height: 12.6rem;
+    border-radius: 11px;
+    margin-right: 15px;
+    width: 11rem;
+    padding: 1px 0px 40px 0px;
+  }
+
+  .item-card p{
+    padding: 13px 7px 7px 7px;
+    font-size: 16px;
+  }
+
+  .cards div ul li{
+    width: 205px !important;
+   }
+   /* .carousel-button-prev,
+   .carousel-button-next {
+     margin-right: 5px;
+   } */
+   .carousel-items{
+    padding-bottom: 0px;
+    height: 244px;
+   }
+   
+
+
+  }
