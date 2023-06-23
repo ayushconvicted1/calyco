@@ -1,92 +1,184 @@
-.aboutus-detail{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 1px 70px 0px;
-}
-.aboutus-detail img{
-    width: 38rem;
-    height: 34rem;
+
+@font-face {
+    font-family:Neology-Deco-W03-Medium;
+    src: url('../../../Fonts/OnlineWebFonts_COM_609cf5310e7655e68a5f8b00c1407832/Neology-Deco-W03-Medium/Neology\ Deco\ W03\ Medium.ttf');
 }
 
-.aboutus-detail div{
-    width: 42%;
-    /* padding-right: 100px; */
+.about-title{
+    width: 49rem;
+    padding: 13px 0px 77px 120px;
+    font-size: 33px;
+    font-family: Neology-Deco-W03-Medium;
+    font-weight: lighter;
+   
 }
 
-.aboutus-detail div h1{
-    font-size: revert;
-    font-weight: 500;
-    font-family: math;
+.about-title h1 span{
+   color: #9C5755;
+}
+
+.about-title h1{
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.about-page{
+    font-size: 13px;
     padding-bottom: 23px;
+    color: #757575;
+    font-weight: lighter;
+    text-transform:uppercase;
 }
-.aboutus-detail div p{
-    font-family: system-ui;
-    font-size: 19px;
-    word-spacing: 6px;
+
+.about-images{
+    margin: auto;
+    width: 100%;
+
 }
+
+
+.about-images img{
+    width: inherit;
+    height: 47rem;
+}
+
+
+.about-infra {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+  
+  .about-infra img {
+    display: block;
+    width: 100%;
+    height: 35rem;
+  }
+  
+  .about-infra .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-family:Neology-Deco-W03-Medium;
+    color: white;
+    padding: 84px 0px 0px 295px;
+  }
+  
+  .about-infra .text-overlay h2 {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-size: 57px;
+  }
+  
+  .about-infra .text-overlay p {
+    font-size: 23px;
+    font-weight: lighter;
+  }
+  
+
+
+@font-face {
+    font-family:Neology-Deco-W03-Regular;
+    src: url('../../../Fonts/OnlineWebFonts_COM_b67db2fceb09b83e212a59fc81189624/Neology-Deco-W03-Regular/Neology\ Deco\ W03\ Regular.ttf');
+}
+
 
 .Our-culture{
-    background: #dbd5cd;
-    width: 17%;
-    height: -moz-fit-content;
-    /* height: fit-content; */
-    padding: 63px 62px 78px;
-    padding: 28px 37px 37px 31px;
-    margin: 4px 50px 60px 50pX;
-    min-height: 180px;
+    background: #F7F7F7;
+    width: 23rem;
+    height: 23rem;
+    margin: 15px;
+    border-radius: 22px;
+    /* padding: 38px; */
+    border: none;
+    text-align: center;
+    transition: 0.5s;
 }
+
+.Our-culture:hover{
+    filter: drop-shadow(0px 0px 5px gray);
+    transform: scale(1.055);
+    background-color: white;
+}
+
+
+
+.Our-culture img{
+    height: 62px;
+    margin-bottom: 42px;
+    margin-top: 42px;;
+}
+
 
 
 .Our-culture h3{
-    font-size: 27px;
+    font-size: 25px;
+    white-space: nowrap;
     font-weight: 500;
     font-family: serif;
     text-align: center;
+    font-family: Neology-Deco-W03-Medium;
+    color: #FE5E00;
+    
 }
 .Our-culture p{
-    padding-top: 19px;
-    /* font-family: sans-serif; */
-    word-break: break-all;
-    /* word-spacing: 5px; */
-    font-family: monospace;
-    font-size: 17px;
+    /* padding-top: 20px; */
+    font-family: 'Neology-Deco-W03-Regular';
+    font-size: 20px;
+    color: #757575;
+    padding: 20px 25px 1px 25px;
 }
 
 .outculture-items{
     display: flex;
-    justify-content:space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 77px;
 }
 
-.about-section h3{
-    font-size: 19px;
-    font-family: math;
-    font-weight: 500;
-    padding: 5px 0px 12px 23px
-}
 
-.aboutus-paragraph{
-    background: #dbd5cd;
-    text-align: justify;
-    padding: 51px 35px 40px 35px;
-    margin: 9px 53px 50px 50px;
-    font-size:25px;
-    font-family: math;
-    word-spacing: 4px;
-    height: -moz-fit-content;
-    height: fit-content;
-    max-height: 4rem;
+
+.row1,.row2{
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+
+
+.aboutus-paragraph{
+       margin-bottom: 70px;
+       text-align: justify;
+       font-size: 33px;
+       width: 80rem;
+       margin: auto;
+       font-family: Neology-Deco-W03-Regular;
+       margin-top: 50px;
+       margin-bottom: 100px;
+   }
+
+
+
+.aboutus-paragraph img{
+    height: 6rem;
+    position: relative;
+    top: 29px;
+}
+
+.aboutus-paragraph p{
+    padding: 0px 100px 1px 100px;
+}
+
+
+.aboutus-paragraph p span{
+   color: #9C5755
 }
 
 .about-section{
-   background-color:#e4e0db;
+   background-color:white
 }
 
     

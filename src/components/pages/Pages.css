@@ -595,7 +595,131 @@ background-color: none;
   border: 1px solid black;
 }
 
+/* contact */
+
+.contact-page {
+  font-family: 'Neology-Deco-W03-Medium';
+  padding: 53px 0px 73px 80px;
+}
+
+
+.contact-page h1{
+  font-size: 54px;
+  font-weight: lighter;
+}
+
+.contact-page p{
+  padding-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #757575;
+}
+
+
+.contact-page h1 span{
+  color: #9C5755;
+}
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location {
+  border: 1px solid #FE5E00;
+  width: calc(33.33% - 28px); /* Adjusted width to fit 3 divs in each row */
+  margin: 0 12px 39px 12px;
+  border-radius: 26px;
+  height: 15rem;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.location:hover{
+  box-shadow: 0px 3px 11px 1px gray;
+  cursor: pointer;
+
+  
+  .country-name{
+  background-color: #FE5E00;
+  color: white;
+  }
+  
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px 60px 0px 60px;
+}
+
+
+.country-name{
+  padding-top: 20px;
+}
+
+
+.content {
+  color: #757575;
+  padding: 20px;
+}
+
+.content div {
+  display: flex;
+  padding-top: 3px;
+}
+
+.content div img {
+  height: 33px;
+}
+
+.content div p {
+  padding-left: 2px;
+  font-family: 'Neology-Deco-W03-Regular';
+  font-size: 20px;
+}
+
+.summary {
+  text-align: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #fe5e00;
+  margin: 0px 50px 7px 50px;
+  font-family: 'Neology-Deco-W03-Medium';
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.map {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.map img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
 @media only screen and (max-width: 767px) {
+
+  .article {
+    justify-content: flex-start;
+  }
+
+  .location {
+    width: calc(33.33% - 36px);
+    margin: 18px;
+  }
  
   .navbar{
     height: 54px;
