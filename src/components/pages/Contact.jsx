@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './Pages.css';
 import email_icon from '../images/email_icon (1).png';
 import location_icon from '../images/location.png';
-import map_photo from '../images/map_photo.png'
+import map_photo from '../images/map_photo.png';
+import { Link } from 'react-router-dom';
+import { FaChevronDown,FaChevronUp } from "react-icons/fa";
 
 const Article = () => {
   const [activeLocation, setActiveLocation] = useState(null);
@@ -25,7 +27,10 @@ const Article = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [isMobileView]);
+  }, []);
+
+ 
+
 
   const contactData = [
     {
@@ -76,41 +81,53 @@ const Article = () => {
   ];
 
   return (
-    <div>
-        <div className='contact-page'>
-            <p>Contact us</p>
-            <h1>Let’s <span>Get in Touch</span> </h1>
-        </div>
-    <div className="article">
-      <div className="row">
-        {contactData.map((data, index) => (
-          <div key={index} className={`location ${activeLocation === index && isMobileView ? 'active' : ''}`}>
-            <div className='country-name'>
-            <h2 className={`summary ${isMobileView ? 'clickable' : ''}`} onClick={() => handleLocationClick(index)}>
-              {data.heading}
-            </h2>
-            </div>
-            {(activeLocation === index && isMobileView) || !isMobileView ? (
-              <div className="content">
-                <div style={{ alignItems: 'center' }}>
-                  <img src={email_icon} style={{ padding: '5.5px' ,height:"21px"}} alt="Email Icon" />
-                  <p>{data.email}</p>
-                </div>
-                <div style={{ alignItems: 'flex-start' }}>
-                  <img src={location_icon} alt="Location Icon" />
-                  <p>{data.address}</p>
-                </div>
-              </div>
-            ) : null}
-          </div>
-        ))}
+    <div  className='contact-section-main'>
+      <div className='contact-page'>
+        <p>Contact us</p>
+        <h1>Let’s <span>Get in Touch</span></h1>
       </div>
-    </div>
-    <div class="map">
-  <img src= {map_photo}/>
-</div>
+      <div className="article">
+        <div className="row">
+          {contactData.map((data, index) => (
+            <div key={index} className={`location ${activeLocation === index && isMobileView ? 'active' : ''}`}>
+              <div className="header" onClick={() => handleLocationClick(index)}>
+                <h2 className={`summary ${isMobileView ? 'clickable' : ''}`} >
+                  {data.heading}
+                </h2>
+                {isMobileView && (
+                  <button className="toggle-button" onClick={() => handleLocationClick(index)}>
+                    {activeLocation === index ? <FaChevronDown /> : <FaChevronUp />}
+                  </button>
+                )}
+              </div>
+              {(activeLocation === index && isMobileView) || !isMobileView ? (
+                <div className="content">
+                  <div className="content-row">
+                    <img src={email_icon} 
+                    style={{
+                      height: '28px',
+                      paddingLeft: '6px',
+                  
+                    }}
 
-
+                    alt="Email Icon" />
+                    <p>
+                      <Link to={`mailto:${data.email}`} className="email-link">{data.email}</Link>
+                    </p>
+                  </div>
+                  <div className="content-row">
+                    <img src={location_icon} className="icon" alt="Location Icon" />
+                    <p>{data.address}</p>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="map">
+        <img src={map_photo} alt="Map" />
+      </div>
     </div>
   );
 };

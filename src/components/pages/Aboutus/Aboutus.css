@@ -6,7 +6,7 @@
 
 .about-title{
     width: 49rem;
-    padding: 13px 0px 77px 120px;
+    padding: 20px 0px 77px 120px;
     font-size: 33px;
     font-family: Neology-Deco-W03-Medium;
     font-weight: lighter;
@@ -24,10 +24,11 @@
 
 .about-page{
     font-size: 13px;
-    padding-bottom: 23px;
+    padding-bottom: 30px;
+    padding-top: 28px;
     color: #757575;
     font-weight: lighter;
-    text-transform:uppercase;
+    text-transform: uppercase
 }
 
 .about-images{
@@ -57,25 +58,25 @@
   
   .about-infra .text-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 82px;
+    left: 352px;
+    width: 27rem;
+    /* height: 100%; */
     display: block;
-    font-family:Neology-Deco-W03-Medium;
+    font-family: Neology-Deco-W03-Medium;
     color: white;
-    padding: 84px 0px 0px 295px;
+    /* padding: 84px 0px 0px 295px; */
   }
   
   .about-infra .text-overlay h2 {
-    font-size: 24px;
+    /* font-size: 24px; */
     font-weight: lighter;
     margin-bottom: 10px;
-    font-size: 57px;
+    font-size: 60px;
   }
   
   .about-infra .text-overlay p {
-    font-size: 23px;
+    font-size: 25px;
     font-weight: lighter;
   }
   
@@ -97,16 +98,29 @@
     border: none;
     text-align: center;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-.Our-culture:hover{
+
+.Our-culture:hover {
     filter: drop-shadow(0px 0px 5px gray);
     transform: scale(1.055);
     background-color: white;
-}
+  }
+  
+  .Our-culture:hover h3 {
+    font-size: 26px;
+    transition: 0.2s;
+  }
+  
+  .Our-culture:hover p {
+    font-size: 21px;
+    transition: 0.2s;
+  }
+   
 
 
-
+ 
 .Our-culture img{
     height: 62px;
     margin-bottom: 42px;
@@ -153,8 +167,9 @@
        margin-bottom: 70px;
        text-align: justify;
        font-size: 33px;
-       width: 80rem;
-       margin: auto;
+       /* width: 80rem; */
+       width: 88%;
+        margin: auto;
        font-family: Neology-Deco-W03-Regular;
        margin-top: 50px;
        margin-bottom: 100px;
@@ -188,38 +203,86 @@
 .Our-culture {
     flex-direction: column;
     width: 100%;
+   margin: 0px 0px 22px 0px;
 }
+
+.Our-culture:hover{
+    transform:none;}
+
+.row1, .row2{
+    display: block;
+}
+
+.about-title{
+    padding: 0px 0px 23px 28px;
+    box-sizing: border-box;
+}
+
+
+.about-title h1{
+    font-size: 39px;
+}
+
+.about-infra .text-overlay{
+    left: 30px;
+    top: 30px;
+    width: 18rem;
+}
+
+.about-infra .text-overlay h2{
+    font-size: 50px;
+}
+.about-infra .text-overlay p{
+    font-size: 22px;
+    width: 18rem;
+}
+
+.about-infra img{
+    height: 23rem;
+}
+
+.aboutus-paragraph img{
+    position: unset;
+    height: 4rem;
+   
+}
+
+
 
 .aboutus-paragraph{
     font-size: 3.3vw;
+    margin-top: 22px;
+
 }
-.aboutus-detail img{
-    display: none;
+
+.aboutus-paragraph p{
+    font-size: 29px;
+    text-align: left;
+    font-weight: bold;
+    padding: 0px;
 }
-.aboutus-detail{
-    padding-left: 33px;
-    padding-right: 33px;
-    text-align: justify;
-    display: block;
-    word-break: break-all;
-   
-}
+
+
 .aboutus-detail div{
     width: 100%;
+}
+
+.about-images img{
+    height: 18rem;
 }
 
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
-   .aboutus-detail div{
+   /* .aboutus-detail div{
     width: 77%;
    }
    .aboutus-detail img{
-    display: none;
-}
+    display: none; */
+/* }
 .Our-culture{
     width: unset;
-}
+} */
     
   }

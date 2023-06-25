@@ -28,7 +28,7 @@ function Footer() {
    <Link to="mailto:Sales@Calyco.co" className='custom-footer-Link'>Sales@Calyco.co</Link></li>
    <li><Link to="mailto:Technicalservices@Calyco.co" className='custom-footer-Link'>Technicalservices@Calyco.co</Link>
 </li> 
-   <li><Link to="mailto:Sales@Calyco.co" className='custom-footer-Link'>Sales@Calyco.co</Link></li>
+   <li><Link to="mailto:Generalinfo@Calyco.Co" className='custom-footer-Link'>Generalinfo@Calyco.Co</Link></li>
    </div>
    <div className='Follow-us'>
    <h2>Follow us</h2>

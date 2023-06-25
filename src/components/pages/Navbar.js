@@ -58,7 +58,7 @@ const Navbar = () => {
         </button>
         <h1 className="navbar-list-heading">
           <span className="heading-1">calyco</span>
-          <span className="heading-2">
+          {/* <span className="heading-2">
             {location.pathname !== '/' && (
               <>
                 {'   '}
@@ -67,7 +67,7 @@ const Navbar = () => {
                 {location.pathname.split('/')[1] === 'products' ? 'Product' : location.pathname.slice(1)}
               </>
             )}
-          </span>
+          </span> */}
         </h1>
       </div>
       <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}  id='product-nav-text'>
