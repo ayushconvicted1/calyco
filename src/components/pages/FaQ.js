@@ -1,26 +1,49 @@
-import React from 'react'
-import "./Pages.css"
+import React, { useState } from 'react';
+import "./Pages.css";
+import About_calyco from './About_calyco';
+import About_products from './About_products';
 
 function FaQ() {
+  const [showCalyco, setShowCalyco] = useState(true);
+  const [showProducts, setShowProducts] = useState(false);
+
+  const handleCalycoClick = () => {
+    setShowCalyco(true);
+    setShowProducts(false);
+  };
+
+  const handleProductsClick = () => {
+    setShowCalyco(false);
+    setShowProducts(true);
+  };
+
   return (
-    <div style={{backgroundColor:"#e4e0db", height:"100vh"}}>
-        <h3>Frequently asked questions</h3>
-        <div className='faq-box'>
-            <div className='number'>01</div>
-            <div className='questions'>
-                <h3>Why Choose RefraTherm International?</h3>
-                <ol>
-                <li>We are the only license holder of CPC in the state of Maharashtra in India, making us one of the exclusive manufacturers of this product.</li>
-                <li> Our clients include some of the top steel, aluminum, and cement manufacturers in India, as well as various importers in the Middle East and Asia.</li>
-                <li>We are committed to providing high-quality products and excellent customer service to meet the needs of our clients.</li>
-                </ol>
-            </div>
+    <div className='FAG-PAGE'>
+      <div className='contact-page'>
+        <p>Help center</p>
+        <h1>Frequently Asked <span> Questions</span></h1>
+      </div>
+      <div className='faq-main-box'>
+        <div className='Right-faq-heading'>
+          <div>
+            <div className={showCalyco ? 'vertical-line active' : 'vertical-line'} />
+            <h3 className={showCalyco ? 'active' : ''} onClick={handleCalycoClick}> <span>About</span> Calyco</h3>
+          </div>
+          <div>
+            <div className={showProducts ? 'vertical-line active' : 'vertical-line'} />
+            <h3 className={showProducts ? 'active' : ''} onClick={handleProductsClick}><span>About</span> Products</h3>
+          </div>
         </div>
+        <div className='left-faq-heading'>
+          {showCalyco && <About_calyco />}
+          {showProducts && <About_products />}
+        </div>
+      </div>
+     <div className='bottam-help-line'>
+       <h3>Have a <span>Question?</span> Get an <span>Answer.</span></h3>
+     </div>
     </div>
-  ) 
+  );
 }
 
-
-
-
-export default FaQ
+export default FaQ;

@@ -10,6 +10,7 @@ import delivery from '../../images/fast-delivery.png'
 import induction from '../../images/induction-stove.png'
 import money from '../../images/money.png'
 import train_tracks from '../../images/train-tracks.png'
+import HelpCenterForm from '../HelpCenterForm';
 
 
 
@@ -81,7 +82,7 @@ Infrastructure</h2>
     </p>
   </div>
 </div>
-
+{/* <HelpCenterForm/> */}
     </div>
   )
 }

@@ -254,6 +254,8 @@
      .Card-info{
         width: 65%;
      }
+
+
    .item-card{
     padding: 4px 4px 0px 4px;
     /* height: auto; */
@@ -264,6 +266,15 @@
     margin-left: 7px;
 
      }
+
+     .item-card:hover{
+      transform: none;
+      filter:none;
+    
+      
+    }
+
+
    .carousel-items{
     height: 0px;
     padding-bottom: 138px;

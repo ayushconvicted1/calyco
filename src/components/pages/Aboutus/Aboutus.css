@@ -207,7 +207,19 @@
 }
 
 .Our-culture:hover{
-    transform:none;}
+    filter: none;
+    transform: none;
+}
+
+.Our-culture:hover h3{
+   font-size: 25px;
+   transform: none;
+}
+
+.Our-culture:hover p{
+font-size: 20px;
+transition: none;
+}
 
 .row1, .row2{
     display: block;
@@ -275,14 +287,9 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
-   /* .aboutus-detail div{
-    width: 77%;
-   }
-   .aboutus-detail img{
-    display: none; */
-/* }
-.Our-culture{
-    width: unset;
-} */
+ .about-infra .text-overlay{
+    top: 97px;
+    left: 162px;
+ }
     
   }

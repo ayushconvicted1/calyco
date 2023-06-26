@@ -253,6 +253,7 @@ summary h2{
   font-size: 45px;
   align-items: center;
   font-weight: lighter;
+  width: 91%;
 }
 
 details p {
@@ -293,24 +294,25 @@ color:black;
     font-size: 19px;
   }
 
-  details {
+ .question-box details {
     padding: 20px 0px 20px 0px;
   }
 
-  details > summary::after {
+ .question-box details > summary::after {
     max-width: 25px;
     max-height: 25px;
     background-size: 20px;
+    padding-left: 8px;
   }
 
-  details p{
+ .question-box details p{
     font-size: 14px;
     text-align: justify;
     width: inherit;
     padding-left: 0px;
   }
 
-  details[open]> summary::after {
+.question-box  details[open]> summary::after {
     background-size: 20px;
 }
 
@@ -395,7 +397,7 @@ color:black;
     border-radius: 16px;
   }
 
-  details p{
+ .question-box details p{
     width: inherit;
     padding-left:0px;
 
