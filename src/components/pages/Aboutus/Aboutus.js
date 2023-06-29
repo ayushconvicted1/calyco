@@ -82,7 +82,7 @@ Infrastructure</h2>
     </p>
   </div>
 </div>
-{/* <HelpCenterForm/> */}
+<HelpCenterForm/>
     </div>
   )
 }

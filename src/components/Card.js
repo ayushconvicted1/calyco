@@ -18,7 +18,7 @@ import metallurgical_coke from './images/Mask group-8.png';
 import Amorphous_Graphite from './images/Mask group-9.png';
 import pellet_coke from './images/Mask group-10.png';
 
-function Card() {
+function Card({customClass, isProductComponent }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigate = useNavigate();
   const carouselItemsRef = useRef(null);
@@ -80,68 +80,84 @@ function Card() {
     <div  className={`cards ${isHovered ? 'hovered' : ''}`} 
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}>
-      <p className="offer-product">Products we offer:</p>
+       {isProductComponent ? (
+        <p className="offer-product product-component-text">Other Products:</p>
+      ) : (
+        <p className="offer-product">Products we offer:</p>
+      )}
       <div
         className={`carousel-items `}
         ref={carouselItemsRef}
-       
+        
       >
             <CardDetail
+             customClass={customClass} 
           img={petroleum}
           para="Calcined petroleum coke"
           onClick={() => handleProductClick(1)}
         />
         <CardDetail
+         customClass={customClass} 
           img={anthracite}
           para="Calcined anthracite"
           onClick={() => handleProductClick(2)}
         />
         <CardDetail
+         customClass={customClass} 
           img={anode_paste}
           para="Anode Paste"
           onClick={() => handleProductClick(3)}
         />
         <CardDetail
+         customClass={customClass} 
           img={Raiser}
           para="Carbon Raiser"
           onClick={() => handleProductClick(4)}
         />
         <CardDetail
+         customClass={customClass} 
           img={Electode}
           para="Graphite Electrode"
           onClick={() => handleProductClick(5)}
         />
         <CardDetail
+         customClass={customClass} 
           img={Tamping}
           para="Tamping Paste"
           onClick={() => handleProductClick(6)}
         />
         <CardDetail
+         customClass={customClass} 
           img={Granules}
           para="Graphite Granules"
           onClick={() => handleProductClick(7)}
         />
         <CardDetail
+         customClass={customClass} 
           img={coal}
           para="Coal"
           onClick={() => handleProductClick(8)}
         />
         <CardDetail
+         customClass={customClass} 
           img={ferro_alloys}
           para="Ferro Alloys"
           onClick={() => handleProductClick(9)}
         />
         <CardDetail
+          customClass={customClass} 
           img={metallurgical_coke}
           para="Metallurgical Coke"
           onClick={() => handleProductClick(10)}
         />
         <CardDetail
+       customClass={customClass} 
           img={Amorphous_Graphite}
           para="Amorphous Graphite"
           onClick={() => handleProductClick(11)}
         />
         <CardDetail
+      customClass={customClass} 
           img={pellet_coke}
           para="Pellet Coke"
           onClick={() => handleProductClick(12)}

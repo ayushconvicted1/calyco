@@ -15,9 +15,13 @@ function HelpCenterForm() {
         <img src={faq_image}/>
       </div>
       <form className="help-center-form" onSubmit={handleSubmit}>
+        <div className='help-center-box'>
+       <div className='form-headings'>
+        <h1>HELP CENTER</h1>
+        <p>Tel : 1234-567890<span>calyco.co</span></p>
+        </div>
         <div className="form-row">
           <div className="form-column">
-            <label htmlFor="firstName" className="custom-label"></label>
             <input
               type="text"
               id="firstName"
@@ -26,7 +30,6 @@ function HelpCenterForm() {
             />
           </div>
           <div className="form-column">
-            <label htmlFor="lastName" className="custom-label"></label>
             <input
               type="text"
               id="lastName"
@@ -37,7 +40,6 @@ function HelpCenterForm() {
         </div>
         <div className="form-row">
           <div className="form-column">
-            <label htmlFor="email" className="custom-label"></label>
             <input
               type="email"
               id="email"
@@ -46,7 +48,6 @@ function HelpCenterForm() {
             />
           </div>
           <div className="form-column">
-            <label htmlFor="phoneNumber" className="custom-label"></label>
             <input
               type="tel"
               id="phoneNumber"
@@ -56,13 +57,14 @@ function HelpCenterForm() {
           </div>
         </div>
         <div className="form-row">
-          <label htmlFor="message" className="custom-label"></label>
           <textarea
             id="message"
             rows="5"
             className="custom-textarea"
             placeholder='Message'
           ></textarea>
+        </div>
+        <span>hello</span>
         </div>
         <button type="submit" className="custom-button">Submit</button>
       </form>

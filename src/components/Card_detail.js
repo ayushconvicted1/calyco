@@ -4,9 +4,11 @@ import logo from './images/logo.png'
 import './Card.css'
 
 function Card_detail(props) {
+  const { customClass } = props;
+
   return (
     
-        <div className='item-card' onClick={props.onClick}>
+    <div className={`item-card ${customClass}`} onClick={props.onClick}>
         <img src={props.img} />
         <div className='bottam-text'>
            <p> {props.para}</p>

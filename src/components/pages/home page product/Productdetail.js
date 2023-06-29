@@ -5,14 +5,15 @@ import './Product_detail.css'
 function Productdetail(props) {
   return (
     <div className='productdetails' style={props.style}> 
-        <img src={props.product_img} className='home-product-image'/>
+        <img src={props.product_img} className='home-product-image' style={props.img}/>
         <div class="homepage-products-info">
-              <h1>{props.Product_main_heading}</h1>
+              {/* <h1>{props.Product_main_heading}</h1>
               <h3>{props.Product_sub_heading}</h3>
                <p className='paras'>
                 {props.product_description}
                </p>
-             <button onClick={props.onclickbtn}>Know more</button>
+             <button onClick={props.onclickbtn}>Know more</button> */}
+             {props.content}
             </div>
     </div>  
   )

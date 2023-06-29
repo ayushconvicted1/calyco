@@ -1,44 +1,42 @@
-.home-product-image {    
-  width: 23rem;
-  height: 23rem;
-  border-radius: 42rem;
+.home-product-image:nth-child(even) {    
+  width: 18rem;
+  height: 16rem;
 }
+
 
 .homepage-products-info {
-  padding-left: 60px;
-  width: 56%;
+  padding-left: 164px;
+  padding-right: 118px;
+  display: flex;
+  align-items: center;
 }
 
-.homepage-products-info h3 {
-  width: 86%;
-  padding-top: 20px;
+.homepage-products-info .product-caption{
+  font-size: 22px;
 }
 
-.homepage-products-info .paras {
-  font-size: 18px;
-  padding: 20px 1px 20px 0px;
+.homepage-products-info .product-caption p .hightlights{
+  font-weight: bold;
+    font-size: 30px;
 }
+
+
 
 .productdetails {
   display: flex;
   background-color: #dbd5cd;
-  height: 23rem;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 80%;
-  margin: auto;
-  padding: 35px 50px 35px 50px;
-  margin-top: 53px;
+  /* height: 23rem; */
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+  width: 100%;
+  /* margin: auto; */
+  /* padding: 35px 50px 35px 50px; */
+  /* margin-top: 53px; */
+  font-family: 'Neology-Deco-W03-Regular';
+  margin-bottom: 20px;
 }
 
-.productdetails button {
-  background-color: transparent;
-  float: left;
-  width: 9rem;
-  border: 2px solid black;
-  height: 3rem;
-  font-size: 15px;
-}
+
 
 .box2 img {
   width: 21rem;
@@ -261,6 +259,43 @@ color:black;
 }
 
 @media only screen and (max-width: 767px) {
+ 
+  /* product-page-image */
+
+  .home-product-image:nth-child(odd){
+    width: 8rem;
+    height: 7rem;
+  }
+.homepage-products-info .product-caption{
+  display: flex;
+}
+
+.homepage-products-info{
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.homepage-products-info .product-caption p .hightlights {
+  font-size: 18px;
+
+}
+
+.homepage-products-info .product-caption p{
+  font-size: 16px;
+}
+.productdetails .home-product-image:nth-child(1){
+  margin-right: 0px;
+}
+
+
+
+  .hidden{
+    display: none;
+  }
+  
+
+  /*  */
+ 
+ 
   .Rightpartsection {
     width: 100%;
     font-size: 15px;
