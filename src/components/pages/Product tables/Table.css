@@ -1,0 +1,81 @@
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 23px;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  
+
+  
+  .table{
+    font-family: 'Neology-Deco-W03-medium';
+    font-weight: bold;
+    font-size: 19px;
+
+    width: 100%;
+   
+    margin-bottom: 13px;
+
+  }
+
+  .table table{
+    color: white;
+  }
+
+  .table table thead{
+    color: #48565E;
+    text-align: center;
+  }
+
+  th.align-right {
+    text-align: right;
+  }
+
+  th .align-left{
+    text-align: left;
+  }
+
+
+  
+  th:not(.align-right):not(.align-left) {
+    text-align: center;
+  }
+
+
+  .table table tr td{
+    text-align: center;
+    height: 65px;
+  }
+
+  .table table thead tr th{
+  
+    height: 80px;
+    /* text-align: center; */
+
+  }
+
+  .paragraph-bottom-discription{
+    color: white;
+    padding-top: 35px;
+    padding-left: 12px;
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    /* product table */
+  
+    .product-table{
+      width: 100%;
+    }
+    .custom-table{
+      font-size: 14px;
+    }
+
+  }

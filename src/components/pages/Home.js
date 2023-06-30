@@ -16,15 +16,15 @@ import Faq_questions from './home page product/Faq_questions'
 import { useEffect } from 'react'
 
 function Home() {
-  useEffect(() => {
-    document.title = 'Calyco'; // Set your desired tab name here
-  }, []);
+  // useEffect(() => {
+  //   document.title = 'Calyco'; // Set your desired tab name here
+  // }, []);
   return (
     <>
     <div>
     <div className='banner-box'>
         <div className='text-box' >
-            <h1>Innovating Tomorrow with Carbon Today</h1>
+            <h1>Innovating tomorrow with Carbon today.</h1>
             <p>Precision. Performance. <span>Carbon Excellence.</span> </p>
         </div>
     </div>

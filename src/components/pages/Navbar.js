@@ -26,8 +26,12 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    document.title = `Calcyo${location.pathname !== '/' ? ` > ${location.pathname.slice(1)}` : ''}`;
+    const a= document.title = `Calcyo${location.pathname !== '/' ? ` > ${location.pathname.slice(1)}` : ''}`;
+    console.log(a)
   }, [location.pathname]);
+  
+
+ 
 
   const showSidebar = () => setSidebar(!sidebar);
 

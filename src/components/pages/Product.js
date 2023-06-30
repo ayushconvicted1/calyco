@@ -17,21 +17,49 @@ import product_page_image2 from "../images/product_page_images (2).png"
 import product_page_image3 from "../images/product_page_images (3).png"
 import product_page_image4 from "../images/product_page_images (4).png"
 
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCirclePlus} from '@fortawesome/free-solid-svg-icons';
 import Card from '../Card';
 import Productdetail from './home page product/Productdetail';
+import Cpc from './Product tables/Cpc';
+import Carbon_anode_paste from './Product tables/Carbon_anode_paste';
+import Coal from './Product tables/Coal';
+import { VscChromeClose } from 'react-icons/vsc';
 
 function Product() {
+
+
   const { productId } = useParams();
+  const [showTable, setShowTable] = useState(false);
 
   const product = productData.find((product) => product.id === parseInt(productId));
+
+  console.log(product ,"product")
 
   if (!product) {
     return <div>Product not found</div>;
   }
 
+  let tableComponent;
+
+  switch (product.id) {
+    case 1:
+      tableComponent = <Cpc />;
+      break;
+    case 3:
+      tableComponent = <Carbon_anode_paste />;
+      break;
+    case 4:
+      tableComponent = <Coal />;
+      break;
+    // Add cases for other product IDs and corresponding table components
+    default:
+      tableComponent = null;
+  }
+
+  const show_slide_table=()=>setShowTable(!showTable)
  
  
 
@@ -78,7 +106,11 @@ function Product() {
           </ul> */}
           {/* <hr /> */}
           <h3>Key specification</h3>
-          <FontAwesomeIcon icon={faCirclePlus} style={{color: "#000000",float:"right"}} />
+          <FontAwesomeIcon
+            icon={faCirclePlus}
+            onClick={() => setShowTable(!showTable)}
+            style={{ color: "#000000", float: "right" }}
+          />
           <p>
           Main elements: {product.Main_element}
           </p>
@@ -142,8 +174,27 @@ function Product() {
        </div>
       
        <Card customClass="product-card" isProductComponent={true}/>
+      {/* <Cpc/>
+      <Carbon_anode_paste/>     
+      <Coal/>   */}
 
-     
+
+        
+          <div className={showTable ? 'product-table-overlay active' : 'product-table-overlay'} onClick={show_slide_table} />
+          <div className={showTable ? 'product-table active' : 'product-table'}>
+            
+              <VscChromeClose  style={{color:'white'}} className='close-icon'
+              onClick={show_slide_table} />
+
+          <div className='table-top-heading'>
+            <h1>Key Specifications</h1>
+            <hr/>
+            </div>  
+            {tableComponent}
+          </div>
+        
+    
+    
 
     </div>
   )
