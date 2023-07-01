@@ -11,7 +11,7 @@ import Electode from '../images/Carbon_Electode_Paste.jpg';
 import Tamping from '../images/Carbon_Tamping_Paste.jpg';
 import Granules from '../images/graphite_granules_and_fines.png';
 import productData from './productData';
-
+import { useEffect } from 'react';
 import product_page_image1 from "../images/product_page_images (1).png"
 import product_page_image2 from "../images/product_page_images (2).png"
 import product_page_image3 from "../images/product_page_images (3).png"
@@ -35,13 +35,24 @@ import CarbonRaiser from './Product tables/CarbonRaiser';
 
 function Product() {
 
-
-  const { productId } = useParams();
+  const { productName } = useParams();
+  // const { productId } = useParams();
   const [showTable, setShowTable] = useState(false);
 
-  const product = productData.find((product) => product.id === parseInt(productId));
+ 
+const product = productData.find((product) => product.product_url=== productName);
+
+// console.log("this is product",product)
+
+  // const product = productData.find((product) => product.id === parseInt(productId));
 
   console.log(product ,"product")
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
 
   if (!product) {
     return <div>Product not found</div>;
@@ -79,7 +90,9 @@ function Product() {
 
   const show_slide_table=()=>setShowTable(!showTable)
  
- 
+
+
+
 
   return (
 

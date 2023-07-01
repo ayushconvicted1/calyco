@@ -28,7 +28,11 @@ const Navbar = () => {
   useEffect(() => {
     const a= document.title = `Calcyo${location.pathname !== '/' ? ` > ${location.pathname.slice(1)}` : ''}`;
     console.log(a)
+    window.scrollTo(0, 0);
+    
   }, [location.pathname]);
+
+ 
   
 
  
@@ -43,11 +47,12 @@ const Navbar = () => {
     setShowTradingMenu(!showTradingMenu);
   };
 
-  const handleProductClick = (productId) => {
+  const handleProductClick = (productName) => {
     // Perform actions based on the clicked product ID
-    console.log(`Clicked product ID: ${productId}`);
+    console.log(`Clicked product ID: ${productName}`);
     // You can perform further logic or update state as needed
-    navigate(`/products/${productId}`);
+    navigate(`/products/${productName}`);
+    window.scrollTo(0, 0);
   };
 
 
@@ -105,25 +110,25 @@ const Navbar = () => {
             {!showProductMenu && <img className="navbar-icons" src={productimg} />}
             {showProductMenu ? (
               <div className="sub-menu" >
-                <li className="nav-subtext" onClick={() => handleProductClick(1)}>
+                <li className="nav-subtext" onClick={() => handleProductClick("Calcined-Petroleum-Coke")}>
                   Calcined Petroleum Coke
                 </li>
-                <li className="nav-subtext" onClick={() => handleProductClick(2)} >
+                <li className="nav-subtext" onClick={() => handleProductClick('Calcined-Anthracite')} >
                   Calcined Anthracite
                 </li>
-                <li className="nav-subtext" onClick={() => handleProductClick(3)}>
+                <li className="nav-subtext" onClick={() => handleProductClick('Carbon-Anode-Paste')}>
                   Carbon Anode Paste
                 </li>
-                <li className="nav-subtext" onClick={() => handleProductClick(4)}>
+                <li className="nav-subtext" onClick={() => handleProductClick('Carbon-Raiser')}>
                   Carbon Raiser
                 </li>
-                <li className="nav-subtext" onClick={() => handleProductClick(5)}>
+                <li className="nav-subtext" onClick={() => handleProductClick('Carbon-Electrode-Paste')}>
                   Carbon Electode Paste
                 </li>
-                <li className="nav-subtext" onClick={() => handleProductClick(6)}>
+                <li className="nav-subtext" onClick={() => handleProductClick('Carbon-Tamping-Paste')}>
                   Carbon Tamping Paste
                 </li>
-                <li className="nav-subtext" onClick={() => handleProductClick(7)}>
+                <li className="nav-subtext" onClick={() => handleProductClick('Graphite-Granules-Fines')}>
                   Graphite Granules &amp; Fines
                 </li>
                 <li className="nav-subtext">Coal</li>

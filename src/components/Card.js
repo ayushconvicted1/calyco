@@ -61,9 +61,9 @@ function Card({customClass, isProductComponent }) {
     };
   }, [currentSlide]);
 
-  const handleProductClick = (productId) => {
-    console.log(`Clicked product ID: ${productId}`);
-    navigate(`/products/${productId}`);
+  const handleProductClick = (productName) => {
+    console.log(`Clicked product name: ${productName}`);
+    navigate(`/products/${productName}`);
   };
 
   const handleMouseEnter = () => {
@@ -94,43 +94,43 @@ function Card({customClass, isProductComponent }) {
              customClass={customClass} 
           img={petroleum}
           para="Calcined petroleum coke"
-          onClick={() => handleProductClick(1)}
+          onClick={() => handleProductClick('Calcined-Petroleum-Coke')}
         />
         <CardDetail
          customClass={customClass} 
           img={anthracite}
           para="Calcined anthracite"
-          onClick={() => handleProductClick(2)}
+          onClick={() => handleProductClick('Calcined-Anthracite')}
         />
         <CardDetail
          customClass={customClass} 
           img={anode_paste}
           para="Anode Paste"
-          onClick={() => handleProductClick(3)}
+          onClick={() => handleProductClick('Carbon-Anode-Paste')}
         />
         <CardDetail
          customClass={customClass} 
           img={Raiser}
           para="Carbon Raiser"
-          onClick={() => handleProductClick(4)}
+          onClick={() => handleProductClick('Carbon-Raiser')}
         />
         <CardDetail
          customClass={customClass} 
           img={Electode}
           para="Graphite Electrode"
-          onClick={() => handleProductClick(5)}
+          onClick={() => handleProductClick('Carbon-Electrode-Paste')}
         />
         <CardDetail
          customClass={customClass} 
           img={Tamping}
           para="Tamping Paste"
-          onClick={() => handleProductClick(6)}
+          onClick={() => handleProductClick('Carbon-Tamping-Paste')}
         />
         <CardDetail
          customClass={customClass} 
           img={Granules}
           para="Graphite Granules"
-          onClick={() => handleProductClick(7)}
+          onClick={() => handleProductClick('Graphite-Granules-Fines')}
         />
         <CardDetail
          customClass={customClass} 

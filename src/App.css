@@ -2,5 +2,7 @@
   background-color:none !important;
  padding: 0px;
   margin: 0px; 
+  scroll-behavior: smooth;
 }
+
 

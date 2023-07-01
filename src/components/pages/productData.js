@@ -13,6 +13,7 @@ import Granules from '../images/graphite_granules_and_fines.png';
 const productData = [
   {
     id: 1,
+    product_url:'Calcined-Petroleum-Coke',
     title: 'Calcined Petroleum Coke',
     image: petroleum,
     application_para:<>
@@ -34,6 +35,7 @@ const productData = [
   },
   {
     id: 2,
+    product_url:'Calcined-Anthracite',
     title: 'Calcined Anthracite',
     image: anthracite,
     paragraph: 'Calcined anthracite is produced by heating anthracite coal to high temperatures in the absence of air to remove volatile components and moisture.',
@@ -57,6 +59,7 @@ const productData = [
   
     {
       id: 3,
+      product_url:'Carbon-Anode-Paste',
       title: 'Carbon Anode Paste',
       image: anode_paste,
       paragraph: 'Carbon anode paste is typically produced by mixing calcined petroleum coke, coal tar pitch, and other additives in a kneading machine.',
@@ -76,6 +79,7 @@ const productData = [
     },
     {
       id: 4,
+      product_url:'Carbon-Raiser',
       title: 'Carbon Raiser',
       image: Raiser,
       paragraph: 'Carbon Raiser is typically produced by calcining (heating) petroleum coke or other carbonaceous materials at high temperatures to remove impurities and increase its carbon content.						',
@@ -94,6 +98,7 @@ const productData = [
       packing_detail: 'In 25/50kg PP bags Or in Jumbo Bags packing as per Customer’s'},
       {
         id: 5,
+        product_url:'Carbon-Electrode-Paste',
         title: 'Carbon Electrode Paste',
         image: Electode,
         paragraph: 'Carbon electrode paste is typically produced by mixing calcined petroleum coke or coal tar pitch with coal tar binder and then adding a small amount of other materials such as carbon black or graphite.',
@@ -113,6 +118,7 @@ const productData = [
         },
         {
           id: 6,
+          product_url:'Carbon-Tamping-Paste',
           title: 'Carbon Tamping Paste',
           image: Tamping,
           application_para:<>
@@ -131,6 +137,7 @@ const productData = [
           },
           {
             id: 7,
+            product_url:'Graphite-Granules-Fines',
             title: "Graphite Granules & Fines",
             image: Granules,
             application_para:<>
