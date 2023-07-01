@@ -25,12 +25,24 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+
+  const getPageName = (pathname) => {
+    if (pathname === '/') {
+      return 'Calcyo';
+    } else {
+      const pathParts = pathname.split('/');
+      return pathParts[pathParts.length - 1];
+    }
+  };
+
+
   useEffect(() => {
-    const a= document.title = `Calcyo${location.pathname !== '/' ? ` > ${location.pathname.slice(1)}` : ''}`;
-    console.log(a)
+    const pageName = getPageName(location.pathname);
+    document.title = pageName;
     window.scrollTo(0, 0);
-    
   }, [location.pathname]);
+
+
 
  
   
