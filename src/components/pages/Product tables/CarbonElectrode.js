@@ -1,7 +1,7 @@
 import React from 'react';
 import './Table.css'; // Import the CSS file
 
-function Carbon_anode_paste() {
+function CarbonElectrode() {
   return (
     <div className='table'>
       <table className="custom-table"> {/* Add the CSS class */}
@@ -14,26 +14,30 @@ function Carbon_anode_paste() {
         <tbody>
           <tr>
             <th className='align-left'>Fixed Carbon</th>
-            <td>98-99%</td>
+            <td>95% min</td>
           </tr>
           <tr>
             <th className='align-left'>Ash</th>
-            <td>0.3-0.5%</td>
+            <td>4-10%</td>
           </tr>
           <tr>
-            <th className='align-left'>Volatiles</th>
-            <td>0.2-0.3%</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Sulfur</th>
-            <td>0.02-0.05%</td>
+            <th className='align-left'>Volatile Matter</th>
+            <td>1% max</td>
           </tr>
           <tr>
             <th className='align-left'>Moisture</th>
-            <td>0.2-0.5%</td>
+            <td>0.5% max</td>
           </tr>
           <tr>
-            <th className='align-left'>Grain Size</th>
+            <th className='align-left'>Bulk Density</th>
+            <td>1.38-1.42 g/cm³</td>
+          </tr>
+          <tr>
+            <th className='align-left'>Specific Resistance</th>
+            <td>55-70 μΩ·m</td>
+          </tr>
+          <tr>
+            <th className='align-left'>Size</th>
             <td>Customized</td>
           </tr>
         </tbody>
@@ -42,4 +46,4 @@ function Carbon_anode_paste() {
   );
 }
 
-export default Carbon_anode_paste;
+export default CarbonElectrode;

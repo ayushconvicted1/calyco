@@ -27,6 +27,11 @@ import Cpc from './Product tables/Cpc';
 import Carbon_anode_paste from './Product tables/Carbon_anode_paste';
 import Coal from './Product tables/Coal';
 import { VscChromeClose } from 'react-icons/vsc';
+import CalcinedAnthraciteTable from './Product tables/Calcined_anthracite_table';
+import CarbonElectrode from './Product tables/CarbonElectrode';
+import CarbonTampingpaste from './Product tables/CarbonTampingpaste';
+import GraphiteGranulesFines from './Product tables/GraphiteGranulesFines';
+import CarbonRaiser from './Product tables/CarbonRaiser';
 
 function Product() {
 
@@ -48,12 +53,25 @@ function Product() {
     case 1:
       tableComponent = <Cpc />;
       break;
+    case 2:
+        tableComponent = <CalcinedAnthraciteTable/>;
+        break;
     case 3:
       tableComponent = <Carbon_anode_paste />;
       break;
     case 4:
-      tableComponent = <Coal />;
+      tableComponent = <CarbonRaiser />;
       break;
+    case 5:
+      tableComponent = <CarbonElectrode />;
+      break;
+    case 6:
+      tableComponent = <CarbonTampingpaste />;
+      break;
+    case 7:
+      tableComponent = <GraphiteGranulesFines />;
+      break;
+ 
     // Add cases for other product IDs and corresponding table components
     default:
       tableComponent = null;
@@ -183,7 +201,7 @@ function Product() {
           <div className={showTable ? 'product-table-overlay active' : 'product-table-overlay'} onClick={show_slide_table} />
           <div className={showTable ? 'product-table active' : 'product-table'}>
             
-              <VscChromeClose  style={{color:'white'}} className='close-icon'
+              <VscChromeClose className='close-icon'
               onClick={show_slide_table} />
 
           <div className='table-top-heading'>
@@ -193,7 +211,7 @@ function Product() {
             {tableComponent}
           </div>
         
-    
+    <CalcinedAnthraciteTable/>
     
 
     </div>

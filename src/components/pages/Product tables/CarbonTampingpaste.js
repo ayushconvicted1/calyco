@@ -1,7 +1,7 @@
 import React from 'react';
 import './Table.css'; // Import the CSS file
 
-function Carbon_anode_paste() {
+function CarbonTampingpaste() {
   return (
     <div className='table'>
       <table className="custom-table"> {/* Add the CSS class */}
@@ -14,23 +14,23 @@ function Carbon_anode_paste() {
         <tbody>
           <tr>
             <th className='align-left'>Fixed Carbon</th>
-            <td>98-99%</td>
+            <td>85-95%</td>
           </tr>
           <tr>
             <th className='align-left'>Ash</th>
-            <td>0.3-0.5%</td>
+            <td>5-15%</td>
           </tr>
           <tr>
             <th className='align-left'>Volatiles</th>
-            <td>0.2-0.3%</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Sulfur</th>
-            <td>0.02-0.05%</td>
+            <td>3-12%</td>
           </tr>
           <tr>
             <th className='align-left'>Moisture</th>
-            <td>0.2-0.5%</td>
+            <td>1% max</td>
+          </tr>
+          <tr>
+            <th className='align-left'>Electrical Resistivity</th>
+            <td>600-1000 μΩ·m</td>
           </tr>
           <tr>
             <th className='align-left'>Grain Size</th>
@@ -42,4 +42,4 @@ function Carbon_anode_paste() {
   );
 }
 
-export default Carbon_anode_paste;
+export default CarbonTampingpaste;

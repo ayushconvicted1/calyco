@@ -1,7 +1,7 @@
 import React from 'react';
 import './Table.css'; // Import the CSS file
 
-function Carbon_anode_paste() {
+function GraphiteGranulesFines() {
   return (
     <div className='table'>
       <table className="custom-table"> {/* Add the CSS class */}
@@ -14,26 +14,18 @@ function Carbon_anode_paste() {
         <tbody>
           <tr>
             <th className='align-left'>Fixed Carbon</th>
-            <td>98-99%</td>
+            <td>85-98%</td>
           </tr>
           <tr>
             <th className='align-left'>Ash</th>
-            <td>0.3-0.5%</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Volatiles</th>
-            <td>0.2-0.3%</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Sulfur</th>
-            <td>0.02-0.05%</td>
+            <td>1-15%</td>
           </tr>
           <tr>
             <th className='align-left'>Moisture</th>
-            <td>0.2-0.5%</td>
+            <td>1% max</td>
           </tr>
           <tr>
-            <th className='align-left'>Grain Size</th>
+            <th className='align-left'>Particle Size</th>
             <td>Customized</td>
           </tr>
         </tbody>
@@ -42,4 +34,4 @@ function Carbon_anode_paste() {
   );
 }
 
-export default Carbon_anode_paste;
+export default GraphiteGranulesFines;
