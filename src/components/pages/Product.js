@@ -211,7 +211,6 @@ function Product() {
             {tableComponent}
           </div>
         
-    <CalcinedAnthraciteTable/>
     
 
     </div>
