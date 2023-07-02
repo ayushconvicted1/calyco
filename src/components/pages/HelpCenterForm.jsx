@@ -21,28 +21,6 @@ function HelpCenterForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-
-     // Send email using smtp.js
-     const config = {
-      Host : "smtp.elasticemail.com",
-      Port:2525,
-      Username : "calyco.co@yopmail.com",
-      Password : "75FAEAC9F879FDCC78A4958531390F98CA4C",
-      // SecureToken: '5ee4cbec-6596-4791-a166-11f9ac4c1e0d',
-      To: 'hritikchoudharykota@gmail.com',
-      From: email,
-      Subject: 'This is the subject',
-      Body: message,
-    };
-
-    window.Email.send(config)
-      .then(() => {
-        alert('Email sent successfully!');
-      })
-      .catch((error) => {
-        console.error('Error sending email:', error);
-      });
-  
   
     // Validate form inputs
     const validationErrors = {};
@@ -92,19 +70,7 @@ function HelpCenterForm(props) {
     }
   };
 
-  // const config={
-  //   Host : "smtp.elasticemail.com",
-  //   Port:2525,
-  //   Username : "calyco.co@yopmail.com",
-  //   Password : "75FAEAC9F879FDCC78A4958531390F98CA4C",
-  //   // SecureToken:'5ee4cbec-6596-4791-a166-11f9ac4c1e0d',
-  //   To : 'them@website.com',
-  //   From : "you@isp.com",
-  //   Subject : "This is the subject",
-  //   Body : "And this is the body"
-  // }
-  
-  
+ 
 
   return (
     <div className="help-center-form-container">
