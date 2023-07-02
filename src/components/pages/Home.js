@@ -1,11 +1,8 @@
 import React from 'react'
-import Card_info_box from '../Card_info_box'
-import logo from '../images/logo.png'
 import './Pages.css'
 import Card from '../Card'
 import ImageBanner from './home page product/Section2.js'
 import Section3 from './home page product/Section3.js'
-// import './product_data.css'
 import Moblity from '../images/mobility.png'
 import settings from '../images/settings.png'
 import helmet from '../images/helmet.png'
@@ -13,12 +10,10 @@ import planet from '../images/planet-earth.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Faq_questions from './home page product/Faq_questions'
-import { useEffect } from 'react'
+
 
 function Home() {
-  // useEffect(() => {
-  //   document.title = 'Calyco'; // Set your desired tab name here
-  // }, []);
+ 
   return (
     <>
     <div>
@@ -89,10 +84,6 @@ function Home() {
     <div>
 
     </div>
-        {/* <div className='Refratherm-aboutus'>
-    <Card_info_box btn="About us"  paragraph="We are a leading manufacturer of high-quality calcined petroleum coke (CPC) and allied products based in Nagpur, India."/>
-    <img src={logo}/>
-        </div> */}
       
     </div>
     </>

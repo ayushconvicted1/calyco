@@ -5,6 +5,15 @@ import Raiser from '../images/Carbon_Raiser.jpg';
 import Electode from '../images/Carbon_Electode_Paste.jpg';
 import Tamping from '../images/Carbon_Tamping_Paste.jpg';
 import Granules from '../images/graphite_granules_and_fines.png';
+import coal from '../images/coal.png';
+import Ferro_Alloys from '../images/Ferro_Alloys.jpg';
+import Metallurgical_Coke from '../images/Metallurgical_Coke.jpg';
+import Amorphous_Graphite from '../images/Amorphous_Graphite.png';
+import pellet_coke from '../images/pellet_coke.png';
+
+
+
+
 
 
 
@@ -154,6 +163,64 @@ const productData = [
             product_type_three: "Expandable graphite",
             Main_element: 'The main element in graphite granules and fines is carbon, which is typically present at a purity level of 99% or higher. Other elements that may be present in smaller amounts include hydrogen, oxygen, nitrogen, and sulfur.',
             sizes_detail: 'Graphite Granules & Fines derived from the Kiln is in size of 0 mm to 30 mm. The same can be further supplied in any size required by the Customer.',
+            packing_detail: 'In 25/50kg PP bags Or in Jumbo Bags packing as per Customer’s requirement.'
+            
+          }
+          ,
+          {
+            id: 8,
+            product_url:'Coal',
+            title: "Coal",
+            image: coal,
+            paragraph: "Coal mined from underground or surface mines and is used as a fuel for electricity generation, industrial processes, and other applications.",
+            Main_element: 'Fixed Carbon, Total Sulphur, Net Calorific Value, Moisture, Ash, Volatile Matter',
+            sizes_detail: 'Size from 0 mm to 50 mm. ',
+            packing_detail: 'In bulk as per Customer’s requirement.'
+            
+          },
+          {
+            id: 9,
+            product_url:'Ferro-Alloys',
+            title: "Ferro Alloys",
+            image: Ferro_Alloys,
+            paragraph: "Ferroalloys are typically produced by carbothermic reduction of oxides in a submerged arc furnace or an electric arc furnace.",
+            Main_element: 'The main elements found in ferroalloys can vary depending on the specific type of alloy, but generally include: Iron, Silicon, Manganese, Chromium and Carbon',
+            sizes_detail: 'Ferro Alloys derived from the Kiln is in size of 0 mm to 30 mm. The same can be further supplied in any size required by the Customer.',
+            packing_detail: 'In 25/50kg PP bags Or in Jumbo Bags packing as per Customer’s requirement.'
+            
+          }
+          ,
+          {
+            id: 10,
+            product_url:'Metallurgical-Coke',
+            title: "Metallurgical Coke",
+            image: Metallurgical_Coke,
+            paragraph: "Metallurgical coke is produced by heating a specific grade of coal in the absence of air to drive off volatile compounds and leave behind a porous, carbon-rich material.",
+            Main_element: 'carbon, hydrogen, sulfur, nitrogen, oxygen, and ash',
+            sizes_detail: 'Metallurgical Coke derived from the Kiln is in size of 0 mm to 30 mm. The same can be further supplied in any size required by the Customer.',
+            packing_detail: 'In 25/50kg PP bags Or in Jumbo Bags packing as per Customer’s requirement.'
+            
+          },
+          {
+            id: 11,
+            product_url:'Amorphous-Graphite',
+            title: "Amorphous Graphite",
+            image: Amorphous_Graphite,
+            paragraph: "Amorphous graphite is typically produced through the thermal metamorphism of coal or through the crystallization of amorphous carbon in volcanic or sedimentary rocks.",
+            Main_element: 'Amorphous graphite typically contains 70-85% carbon and small amounts of other elements such as silicon, sulfur, nitrogen, and iron.',
+            sizes_detail: 'Amorphous graphite derived from the Kiln is in size of 0 mm to 30 mm. The same can be further supplied in any size required by the Customer.',
+            packing_detail: 'In 25/50kg PP bags Or in Jumbo Bags packing as per Customer’s requirement.'
+            
+          }
+          ,
+          {
+            id: 12,
+            product_url:'Pellet-Coke',
+            title: "Pellet Coke",
+            image: pellet_coke,
+            paragraph: "Pellet coke is a type of fuel that is produced by compressing a mixture of pulverized coal and binder into small pellets",
+            Main_element: 'Pellet coke is mainly composed of carbon, but the exact chemical composition can vary depending on the type and source of the raw material used in its production',
+            sizes_detail: 'Pellet Coke derived from the Kiln is in size of 0 mm to 30 mm. The same can be further supplied in any size required by the Customer',
             packing_detail: 'In 25/50kg PP bags Or in Jumbo Bags packing as per Customer’s requirement.'
             
           }

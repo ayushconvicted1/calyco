@@ -781,20 +781,72 @@ border-bottom: 2px solid black;
 
 /* faq help center */
 
+.Feedbackfrom.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  /* backdrop-filter: blur(1px); */
+}
+
+.contactform {
+  position: fixed;
+  top: 123%;
+  left: 0%;
+  right: 0%;
+  width: 83%;
+  height: 100vh;
+  z-index: 1000;
+  margin: auto;
+  transition: 0.6s;
+}
+
+.contactform.active {
+  top: 5%;
+}
+
+.help-center-form-container {
+  position: relative;
+}
+
+.close-icon-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  background: transparent;
+}
+
+.close-icon-container svg{
+  font-size: 27px;
+  color: white;
+}
+
+
+.image-container {
+  position: relative;
+}
+
+
+
+
+
 .help-center-form-container {
   max-width: 1096px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
-  border: 2px solid fuchsia;
+   background-color: white;
  
 }
 
 .help-center-form {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
   width: 47%;
   justify-content: center;
   align-items: self-start;
@@ -827,9 +879,22 @@ border-bottom: 2px solid black;
   resize: none;
   outline: none;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
+.error-message{
+  color: red;
+}
 
+.success-message{
+  color: #7D7D7D;
+}
+
+.response{
+  font-family: 'Neology-Deco-W03-Regular';
+    font-size: 19px;
+    padding-top: 10px;
+}
 .form-row:nth-child(4){
   width: 95%;
 }
@@ -850,7 +915,6 @@ border-bottom: 2px solid black;
 .image-container {
   display: flex;
   justify-content: center;
-  border: 2px solid green;
   width: 55%;
 }
 
@@ -861,6 +925,7 @@ border-bottom: 2px solid black;
 
 .form-headings{
   margin-bottom: 40px;
+  text-align: left;
 }
 
 .form-headings h1{
@@ -1071,6 +1136,21 @@ border-bottom: 2px solid black;
   }
 
   /* contact */
+
+  .contactform{
+    width: 100%;
+  }
+
+  .contactform.active{
+    top: auto;
+    bottom: 0;
+    height: auto;
+  }
+
+  .close-icon-container svg{
+    color: black;
+  }
+
    .article{
     order: 4;
     display: block;
@@ -1215,6 +1295,7 @@ border-bottom: 2px solid black;
 .help-center-form{
   padding: 0px;
   width: 100%;
+  box-sizing: border-box;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -1235,6 +1316,11 @@ border-bottom: 2px solid black;
 .help-center-box{
   width: 100%;
   padding: 25px;
+  box-sizing: border-box;
+}
+
+.help-center-form-container{
+  border-radius: 26px;
 }
 .form-row:nth-child(4){
   width: 100%;

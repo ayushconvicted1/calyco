@@ -1,15 +1,6 @@
 import React from 'react';
 import './Pages.css';
-import Card_detail from '../Card_detail';
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import petroleum from '../images/calcined_petroleum_coke.png';
-import anthracite from '../images/calcined_anthracite.png';
-import anode_paste from '../images/Carbon_anode_paste.jpg';
-import Raiser from '../images/Carbon_Raiser.jpg';
-import Electode from '../images/Carbon_Electode_Paste.jpg';
-import Tamping from '../images/Carbon_Tamping_Paste.jpg';
-import Granules from '../images/graphite_granules_and_fines.png';
 import productData from './productData';
 import { useEffect } from 'react';
 import product_page_image1 from "../images/product_page_images (1).png"
@@ -32,6 +23,10 @@ import CarbonElectrode from './Product tables/CarbonElectrode';
 import CarbonTampingpaste from './Product tables/CarbonTampingpaste';
 import GraphiteGranulesFines from './Product tables/GraphiteGranulesFines';
 import CarbonRaiser from './Product tables/CarbonRaiser';
+import FerroAlloysTable from './Product tables/FerroAlloysTable';
+import MetallurgicalCokeTable from './Product tables/MetallurgicalCokeTable.js';
+import AmorphousGraphiteTable from './Product tables/AmorphousGraphiteTable';
+import PelletCokeTable from './Product tables/PelletCokeTable';
 
 function Product() {
 
@@ -42,7 +37,7 @@ function Product() {
  
 const product = productData.find((product) => product.product_url=== productName);
 
-// console.log("this is product",product)
+console.log("this is product",product)
 
   // const product = productData.find((product) => product.id === parseInt(productId));
 
@@ -82,6 +77,22 @@ const product = productData.find((product) => product.product_url=== productName
     case 7:
       tableComponent = <GraphiteGranulesFines />;
       break;
+    case 8:
+        tableComponent = <Coal/>;
+      break;
+    case 9:
+        tableComponent = <FerroAlloysTable />;
+      break;
+    case 10:
+      tableComponent = <MetallurgicalCokeTable/>;
+      break;
+    case 11:
+        tableComponent = <AmorphousGraphiteTable/>;
+        break;
+    case 12:
+          tableComponent = <PelletCokeTable/>;
+          break;
+
  
     // Add cases for other product IDs and corresponding table components
     default:

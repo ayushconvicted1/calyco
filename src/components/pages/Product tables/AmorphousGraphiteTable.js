@@ -1,7 +1,7 @@
 import React from 'react';
 import './Table.css'; // Import the CSS file
 
-function CoalTable() {
+function AmorphousGraphiteTable() {
   return (
     <div className='table'>
       <table className="custom-table"> {/* Add the CSS class */}
@@ -14,23 +14,23 @@ function CoalTable() {
         <tbody>
           <tr>
             <td>Fixed Carbon</td>
-            <td>40-90%</td>
+            <td>70-85%</td>
           </tr>
           <tr>
             <td>Volatile Matter</td>
-            <td>5-50%</td>
+            <td>12-18%</td>
           </tr>
           <tr>
             <td>Ash</td>
-            <td>1-40%</td>
+            <td>2-5%</td>
           </tr>
           <tr>
             <td>Sulfur</td>
-            <td>0.1-5%</td>
+            <td>0.05-0.3%</td>
           </tr>
           <tr>
             <td>Moisture</td>
-            <td>1-30%</td>
+            <td>1-3%</td>
           </tr>
           <tr>
             <td>Size</td>
@@ -42,4 +42,4 @@ function CoalTable() {
   );
 }
 
-export default CoalTable;
+export default AmorphousGraphiteTable;

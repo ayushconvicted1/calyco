@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import "./Pages.css";
 import About_calyco from './About_calyco';
 import About_products from './About_products';
+import HelpCenterForm from './HelpCenterForm';
 
 function FaQ() {
   const [showCalyco, setShowCalyco] = useState(true);
   const [showProducts, setShowProducts] = useState(false);
+  const [showfeedbackform, setShowFeedBackForm] = useState(false);
 
   const handleCalycoClick = () => {
     setShowCalyco(true);
@@ -17,11 +19,15 @@ function FaQ() {
     setShowProducts(true);
   };
 
+  const contactform=()=> {  console.log('contactform clicked');
+  setShowFeedBackForm(!showfeedbackform)}
+  
+
   return (
     <div className='FAG-PAGE'>
       <div className='contact-page'>
         <p>Help center</p>
-        <h1>Frequently Asked <span> Questions</span></h1>
+        <h1>Frequently Asked <span>Questions</span></h1>
       </div>
       <div className='faq-main-box'>
         <div className='Right-faq-heading'>
@@ -39,9 +45,14 @@ function FaQ() {
           {showProducts && <About_products />}
         </div>
       </div>
-     <div className='bottam-help-line'>
-       <h3>Have a <span>Question?</span> Get an <span>Answer.</span></h3>
-     </div>
+      <div  className='bottam-help-line'>
+        <h3 onClick={contactform}>Have a <span>Question?</span> Get an <span>Answer.</span></h3>
+        <div className={showfeedbackform ? 'Feedbackfrom active' : 'Feebackform'} />
+       <div className={showfeedbackform ? 'contactform active' : 'contactform'}   >
+       <HelpCenterForm  onClick={contactform}/>
+       </div>
+        
+      </div>
     </div>
   );
 }

@@ -5,8 +5,6 @@ import { MdKeyboardArrowRight } from 'react-icons/md';
 import './Pages.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import home from '../images/home (1).png';
-import product from '../images/package.png';
-import info from '../images/info.png';
 import productimg from '../images/package.png';
 import aboutus from '../images/info.png';
 import team from '../images/briefcase.png';
@@ -43,12 +41,6 @@ const Navbar = () => {
   }, [location.pathname]);
 
 
-
- 
-  
-
- 
-
   const showSidebar = () => setSidebar(!sidebar);
 
   const toggleProductMenu = () => {
@@ -62,7 +54,6 @@ const Navbar = () => {
   const handleProductClick = (productName) => {
     // Perform actions based on the clicked product ID
     console.log(`Clicked product ID: ${productName}`);
-    // You can perform further logic or update state as needed
     navigate(`/products/${productName}`);
     window.scrollTo(0, 0);
   };
@@ -143,11 +134,11 @@ const Navbar = () => {
                 <li className="nav-subtext" onClick={() => handleProductClick('Graphite-Granules-Fines')}>
                   Graphite Granules &amp; Fines
                 </li>
-                <li className="nav-subtext">Coal</li>
-                <li className="nav-subtext">Ferro Alloys</li>
-                <li className="nav-subtext">Metallurgical Coke</li>
-                <li className="nav-subtext">Amorphous Graphite</li>
-                <li className="nav-subtext">Pellet Coke</li>
+                <li className="nav-subtext" onClick={() => handleProductClick('Coal')}>Coal</li>
+                <li className="nav-subtext" onClick={() => handleProductClick('Ferro-Alloys')}>Ferro Alloys</li>
+                <li className="nav-subtext" onClick={() => handleProductClick('Metallurgical-Coke')}>Metallurgical Coke</li>
+                <li className="nav-subtext"  onClick={() => handleProductClick('Amorphous-Graphite')}>Amorphous Graphite</li>
+                <li className="nav-subtext"   onClick={() => handleProductClick('Pellet-Coke')}>Pellet Coke</li>
               </div>
             ) : (
               'Product'
