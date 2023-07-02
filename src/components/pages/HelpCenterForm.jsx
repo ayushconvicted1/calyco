@@ -19,7 +19,7 @@ function HelpCenterForm(props) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault(); 
 
   
     // Validate form inputs
@@ -64,9 +64,12 @@ function HelpCenterForm(props) {
       setEmail('');
       setPhoneNumber('');
       setMessage('');
+     
     } else {
       // Display validation errors
       setErrors(validationErrors);
+      e.preventDefault();
+     
     }
   };
 
@@ -159,6 +162,7 @@ function HelpCenterForm(props) {
   type="submit"
   className="custom-button"
   // onClick={formSubmitted ? props.onClick : null}
+  
 >
   Submit
 </button>
