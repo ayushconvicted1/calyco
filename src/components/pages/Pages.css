@@ -164,6 +164,11 @@ footer .get-help hr{
   align-items: center;
 }
 
+.navbar-list-heading .logo-name{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* this button is not used */
 
 .left-part button{

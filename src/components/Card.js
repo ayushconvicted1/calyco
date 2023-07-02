@@ -136,31 +136,31 @@ function Card({customClass, isProductComponent }) {
          customClass={customClass} 
           img={coal}
           para="Coal"
-          onClick={() => handleProductClick(8)}
+          onClick={() => handleProductClick('Coal')}
         />
         <CardDetail
          customClass={customClass} 
           img={ferro_alloys}
           para="Ferro Alloys"
-          onClick={() => handleProductClick(9)}
+          onClick={() => handleProductClick('Ferro-Alloys')}
         />
         <CardDetail
           customClass={customClass} 
           img={metallurgical_coke}
           para="Metallurgical Coke"
-          onClick={() => handleProductClick(10)}
+          onClick={() => handleProductClick('Metallurgical-Coke')}
         />
         <CardDetail
        customClass={customClass} 
           img={Amorphous_Graphite}
           para="Amorphous Graphite"
-          onClick={() => handleProductClick(11)}
+          onClick={() => handleProductClick('Amorphous-Graphite')}
         />
         <CardDetail
       customClass={customClass} 
           img={pellet_coke}
           para="Pellet Coke"
-          onClick={() => handleProductClick(12)}
+          onClick={() => handleProductClick('Pellet-Coke')}
         />
       </div>
       <div className="carousel-buttons">

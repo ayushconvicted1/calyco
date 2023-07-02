@@ -69,17 +69,9 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBars} style={{ color: 'black' }} />
         </button>
         <h1 className="navbar-list-heading">
+       <Link  to="/"  className='logo-name'>
           <span className="heading-1">calyco</span>
-          {/* <span className="heading-2">
-            {location.pathname !== '/' && (
-              <>
-                {'   '}
-                <MdKeyboardArrowRight />
-                {'   '}
-                {location.pathname.split('/')[1] === 'products' ? 'Product' : location.pathname.slice(1)}
-              </>
-            )}
-          </span> */}
+      </Link>   
         </h1>
       </div>
       <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}  id='product-nav-text'>

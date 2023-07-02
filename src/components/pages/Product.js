@@ -216,10 +216,7 @@ console.log("this is product",product)
        </div>
       
        <Card customClass="product-card" isProductComponent={true}/>
-      {/* <Cpc/>
-      <Carbon_anode_paste/>     
-      <Coal/>   */}
-
+     
 
         
           <div className={showTable ? 'product-table-overlay active' : 'product-table-overlay'} onClick={show_slide_table} />
