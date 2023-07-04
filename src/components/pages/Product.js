@@ -1,13 +1,12 @@
 import React from 'react';
 import './Pages.css';
-import 'react-multi-carousel/lib/styles.css';
+// import 'react-multi-carousel/lib/styles.css';
 import productData from './productData';
 import { useEffect } from 'react';
 import product_page_image1 from "../images/product_page_images (1).png"
 import product_page_image2 from "../images/product_page_images (2).png"
 import product_page_image3 from "../images/product_page_images (3).png"
 import product_page_image4 from "../images/product_page_images (4).png"
-
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -27,26 +26,19 @@ import FerroAlloysTable from './Product tables/FerroAlloysTable';
 import MetallurgicalCokeTable from './Product tables/MetallurgicalCokeTable.js';
 import AmorphousGraphiteTable from './Product tables/AmorphousGraphiteTable';
 import PelletCokeTable from './Product tables/PelletCokeTable';
+import DetailComponent from './DetailComponent';
 
 function Product() {
 
   const { productName } = useParams();
-  // const { productId } = useParams();
   const [showTable, setShowTable] = useState(false);
+  
 
  
 const product = productData.find((product) => product.product_url=== productName);
-
-console.log("this is product",product)
-
-  // const product = productData.find((product) => product.id === parseInt(productId));
-
-  console.log(product ,"product")
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
 
 
   if (!product) {
@@ -101,9 +93,6 @@ console.log("this is product",product)
 
   const show_slide_table=()=>setShowTable(!showTable)
  
-
-
-
 
   return (
 
@@ -164,6 +153,21 @@ console.log("this is product",product)
           <p>{product.packing_detail}</p>
         </div>
       </div>
+
+      <div className='Graph-flex-box'>
+  {product.Graphdata.map((data, index) => (
+    <DetailComponent
+      key={index}
+      product_category={data.product_category}
+      Fixed_carbon={data.Fixed_carbon}
+      Ash_content={data.Ash_content}
+      Volatile={data.Volatile}
+      Sulfur={data.Sulfur}
+      Moisture_content={data.Moisture_content}
+    />
+  ))}
+</div>
+
          
 <div className='product-images-with-headlines'>
 
@@ -215,10 +219,10 @@ console.log("this is product",product)
        />
        </div>
       
+      
        <Card customClass="product-card" isProductComponent={true}/>
-     
-
-        
+   
+      
           <div className={showTable ? 'product-table-overlay active' : 'product-table-overlay'} onClick={show_slide_table} />
           <div className={showTable ? 'product-table active' : 'product-table'}>
             

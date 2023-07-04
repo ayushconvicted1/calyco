@@ -1067,6 +1067,135 @@ border-bottom: 2px solid black;
 
 /*  */
 
+/* graph component */
+
+.Graph-flex-box{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-bottom: 45px;
+  margin: 70px 97px 70px 97px;
+
+}
+
+.Graph-flex-box::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as needed */
+  height: 4px; 
+  -webkit-appearance: none;
+} 
+
+.Graph-flex-box::-webkit-scrollbar-track {
+  background-color: #EBEFF0; /* Light gray */
+  -webkit-appearance: none;
+  
+}
+
+.Graph-flex-box::-webkit-scrollbar-thumb {
+  background-color: #8A9BA4; /* Gray */
+ max-width: 5px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+
+
+
+
+
+
+.carousel-items > * {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-snap-coordinate: 0% 0%;
+  scroll-snap-type: y mandatory;
+}
+
+
+
+.Main-graph-container{
+  width: fit-content;
+  text-align: center;
+  font-family: 'Neology-Deco-W03-Regular';
+  border-right: 2px solid lightgray;
+
+}
+
+.Main-graph-container h1{
+  font-weight: lighter;
+  color: #5A7D9F;
+  font-size: 23px;
+  padding-bottom: 18px;
+
+}
+
+.container{
+  width: 470px;
+  height: 370px;
+  display: flex;
+  margin: 0px 40px 0px 40px;
+}
+
+
+.container .boxes{
+  width: 77px;
+  border-radius: 43px;
+  margin: 30px 8px 8px 9px;
+  background-color: #EBEFF0;
+  align-items: self-end;
+  display: flex;
+  padding: 5px;
+  flex-direction: column-reverse;
+  height: 75%;
+  align-items: center;
+ 
+}
+
+.container div .boxes .child-box{
+    border-radius: 40px;
+    height: 81%;
+    padding: 30px;
+}
+
+
+
+.container div:nth-child(1) .boxes .child-box{
+  background-color: #6A6969;
+}
+.container div:nth-child(2) .boxes .child-box{
+  background-color: #8A6133;
+}
+.container div:nth-child(3) .boxes .child-box{
+  background-color: #36808A;
+}
+.container div:nth-child(4) .boxes .child-box{
+  background-color: #CFA825;
+}
+.container div:nth-child(5) .boxes .child-box{
+  background-color: #81ACC3;
+}
+
+.container div{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container div span{
+  text-align: center;
+  font-weight: bold;
+
+
+}
+
+.container .boxes span{
+  color: #9C5755;
+  margin: auto;
+  margin-bottom: 15px;
+  font-weight: lighter;
+
+}
+
+/*  */
+
 
 
 
