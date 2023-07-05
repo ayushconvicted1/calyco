@@ -26,11 +26,67 @@ import MetallurgicalCokeTable from './Product tables/MetallurgicalCokeTable.js';
 import AmorphousGraphiteTable from './Product tables/AmorphousGraphiteTable';
 import PelletCokeTable from './Product tables/PelletCokeTable';
 import DetailComponent from './DetailComponent';
+import { useRef } from 'react';
+import { FiChevronRight,FiChevronLeft } from 'react-icons/fi';
+
 
 function Product() {
 
   const { productName } = useParams(); 
   const [showTable, setShowTable] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const carouselItemsRef = useRef(null);
+  const prevButtonRef = useRef(null);
+  const nextButtonRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
+  const [leftShift, setLeftShift] = useState(0);
+  
+  
+
+  useEffect(() => {
+    const handleScrollPrevious = () => {
+      if (carouselItemsRef.current && currentSlide > 0) {
+        const scrollDistance = carouselItemsRef.current.offsetWidth * (currentSlide - 1); // Adjusted scroll distance
+        carouselItemsRef.current.scrollTo({
+          left: scrollDistance,
+          behavior: 'smooth',
+        });
+        setCurrentSlide((prevSlide) => prevSlide - 1);
+      }
+    };
+
+    const handleScrollNext = () => {
+      if (carouselItemsRef.current && currentSlide < totalItems - 1) {
+        carouselItemsRef.current.scrollBy({
+          left: carouselItemsRef.current.offsetWidth,
+          behavior: 'smooth',
+        });
+        setCurrentSlide((prevSlide) => prevSlide + 1);
+      }
+    };
+
+    const prevButton = prevButtonRef.current;
+    const nextButton = nextButtonRef.current;
+
+    prevButton.addEventListener('click', handleScrollPrevious);
+    nextButton.addEventListener('click', handleScrollNext);
+
+    return () => {
+      prevButton.removeEventListener('click', handleScrollPrevious);
+      nextButton.removeEventListener('click', handleScrollNext);
+    };
+  }, [currentSlide]);
+
+  
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const totalItems=12
   
 
  
@@ -122,7 +178,8 @@ const product = productData.find((product) => product.product_url=== productName
         </div>  
       </div>
 
-      <div className='Graph-flex-box'>
+<div className='Graph-page'   onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className='Graph-flex-box' ref={carouselItemsRef} >
   {product.Graphdata.map((data, index) => (
     <DetailComponent
       key={index}
@@ -135,6 +192,29 @@ const product = productData.find((product) => product.product_url=== productName
     />
   ))}
 </div>
+<div className="carousel-buttons">
+        <button
+          ref={prevButtonRef}
+          className="carousel-button-prev"
+          disabled={currentSlide === 0}
+          style={{ left: `${isHovered ? `${leftShift}px` : '-55px'}` }}
+        >
+          <FiChevronLeft />
+        </button>
+        <button
+          ref={nextButtonRef}
+          className="carousel-button-next"
+          disabled={currentSlide === totalItems - 1}
+          style={{
+            right: `${isHovered ? `${leftShift}px` : '-55px'}`,
+          }}
+        >
+          <FiChevronRight />
+          
+        
+        </button>
+      </div>
+      </div>
 
          
 <div className='product-images-with-headlines'>
