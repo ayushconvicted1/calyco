@@ -1112,7 +1112,7 @@ border-bottom: 2px solid black;
 
 
 .Main-graph-container{
-  width: fit-content;
+  width: 100%;
   text-align: center;
   font-family: 'Neology-Deco-W03-Regular';
   border-right: 2px solid lightgray;
@@ -1128,7 +1128,7 @@ border-bottom: 2px solid black;
 }
 
 .container{
-  width: 470px;
+  /* width: 470px; */
   height: 370px;
   display: flex;
   margin: 0px 40px 0px 40px;

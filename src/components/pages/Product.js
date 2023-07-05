@@ -1,6 +1,5 @@
 import React from 'react';
 import './Pages.css';
-// import 'react-multi-carousel/lib/styles.css';
 import productData from './productData';
 import { useEffect } from 'react';
 import product_page_image1 from "../images/product_page_images (1).png"
@@ -30,7 +29,7 @@ import DetailComponent from './DetailComponent';
 
 function Product() {
 
-  const { productName } = useParams();
+  const { productName } = useParams(); 
   const [showTable, setShowTable] = useState(false);
   
 
@@ -105,37 +104,6 @@ const product = productData.find((product) => product.product_url=== productName
       
           <p className='product-detail'>{product.paragraph}</p>
           <hr />
-          {/* <h3>Application</h3> */}
-          {/* <ul className='application'>
-            <li>
-              <p>
-                <strong>{product.application_para_one}:</strong> {product.para_one_detail}
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>{product.application_para_two}:</strong> {product.para_two_detail}
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>{product.application_para_three}:</strong> {product.para_three_detail}
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>{product.application_para_four}:</strong> {product.para_four_detail}
-              </p>
-            </li>
-          </ul> */}
-          {/* <p>{product.application_para}</p>
-          <h3>Different types of the products</h3>
-          <ul className='type-product'>
-            <li>-{product.product_type_one}</li>
-            <li>-{product.product_type_two}</li>
-            <li>-{product.product_type_three}</li>
-          </ul> */}
-          {/* <hr /> */}
           <h3>Key specification</h3>
           <FontAwesomeIcon
             icon={faCirclePlus}
@@ -151,7 +119,7 @@ const product = productData.find((product) => product.product_url=== productName
           <hr />
           <h3>Packing</h3>
           <p>{product.packing_detail}</p>
-        </div>
+        </div>  
       </div>
 
       <div className='Graph-flex-box'>
