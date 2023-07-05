@@ -1136,13 +1136,13 @@ border-bottom: 2px solid black;
 
 
 .container .boxes{
-  width: 77px;
+  width: 60px;
   border-radius: 43px;
   margin: 30px 8px 8px 9px;
   background-color: #EBEFF0;
   align-items: self-end;
   display: flex;
-  padding: 5px;
+  padding: 10px;
   flex-direction: column-reverse;
   height: 75%;
   align-items: center;
@@ -1151,8 +1151,9 @@ border-bottom: 2px solid black;
 
 .container div .boxes .child-box{
     border-radius: 40px;
-    height: 81%;
-    padding: 30px;
+    /* height: 81%; */
+    /* padding: 30px; */
+    width: 100%;
 }
 
 

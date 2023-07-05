@@ -11,35 +11,35 @@ const DetailComponent = (props) => {
         <div className='container'>
           <div>
             <div className='boxes'>
-              <div className='child-box' style={{ height: `calc(${Fixed_carbon} + 74px)` }}></div>
+              <div className='child-box' style={{ height: `calc(${Fixed_carbon} + 40px)` }}></div>
               <span>{Fixed_carbon}</span>
             </div>
             <span>Fixed<br />Carbon</span>
           </div>
           <div>
             <div className='boxes'>
-              <div className='child-box' style={{ height: `calc(${Ash_content} + 74px)` }}></div>
+              <div className='child-box' style={{ height: `calc(${Ash_content} + 40px)` }}></div>
               <span>{Ash_content}</span>
             </div>
             <span>Ash<br />Content</span>
           </div>
           <div>
             <div className='boxes'>
-              <div className='child-box' style={{ height: `calc(${Volatile} + 74px)` }}></div>
+              <div className='child-box' style={{ height: `calc(${Volatile} + 40px)` }}></div>
               <span>{Volatile}</span>
             </div>
             <span>Volatile<br />Matter</span>
           </div>
           <div>
             <div className='boxes'>
-              <div className='child-box' style={{ height: `calc(${Sulfur} + 74px)` }}></div>
+              <div className='child-box' style={{ height: `calc(${Sulfur} + 40px)` }}></div>
               <span>{Sulfur}</span>
             </div>
             <span>Sulfur</span>
           </div>
           <div>
             <div className='boxes'>
-              <div className='child-box' style={{ height: `calc(${Moisture_content}  + 74px)` }}></div>
+              <div className='child-box' style={{ height: `calc(${Moisture_content}  + 40px)` }}></div>
               <span>{Moisture_content}</span>
             </div>
             <span>Moisture<br />Content</span>
