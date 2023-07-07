@@ -5,7 +5,7 @@ const DetailComponent = (props) => {
   const { product_category, Fixed_carbon, Ash_content, Volatile, Sulfur, Moisture_content } = props;
 
   return (
-    <div style={{display:"flex"}}>
+    <div className='graph' style={{display:"flex"}}>
       <div className='Main-graph-container'>
         <h1>{product_category}</h1>
         <div className='container'>
