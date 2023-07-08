@@ -10,7 +10,7 @@ import planet from '../images/planet-earth.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Faq_questions from './home page product/Faq_questions'
-
+import { Link } from 'react-router-dom'
 
 function Home() {
  
@@ -67,12 +67,20 @@ function Home() {
     We are committed to providing high-quality products and excellent customer service to meet the needs of our clients."
     showBorder={true} 
     />
-      <Faq_questions
-    question="Does Calyco provide consulting in Calcining services?"
-    answer="In addition to manufacturing calcined products, Calyco also provides technical consulting services to customers to help them optimize their use of carbon products and improve their overall efficiency.
-    Please contact us at consult@calyco.co to reach our consulting team."
-    showBorder={true} 
-    />
+  <Faq_questions
+            question="Does Calyco provide consulting in Calcining services?"
+            answer={
+              <>
+                In addition to manufacturing calcined products, Calyco also provides technical consulting services to customers to help them optimize their use of carbon products and improve their overall efficiency.
+                Please contact us at{' '}
+                <Link to='mailto:consult@calyco.co' className='link'>
+                  consult@calyco.co
+                </Link>{' '}
+                to reach our consulting team.
+              </>
+            }
+            showBorder={true}
+          />
        <Faq_questions
     question="What is Calyco's production capacity?"
     answer="Calyco runs a modern manufacturing plant that can produce up to 30,000 metric tons per year, utilizing advanced technology and equipment."
