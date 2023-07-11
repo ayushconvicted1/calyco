@@ -39,6 +39,8 @@ footer div{
     width: 50%;
 }
 
+
+
 .Follow-us .linkdin{
   font-size: 34px;
 }
@@ -105,6 +107,7 @@ footer div hr{
     margin: 8px 0px 17px;
     height: 0.1px;
     background: white;
+  
 }
 
 footer .get-help hr{
@@ -232,7 +235,7 @@ footer .get-help hr{
 }
 
 .follow-button{
-  font-size: 33px;
+  font-size: 32px;
   padding: 0px;
  
 }
@@ -453,14 +456,17 @@ background-color: none;
 }
 
 .product-info{
-     /* background: #dbd5cd; */
      width: 40%;
      margin: 17px;
      padding: 2px 28px 24px 28px;
      text-align: left;
-     /* border: 1px solid black; */
      font-family: 'Neology-Deco-W03-Regular';
 }
+
+
+
+
+
 .product-info h3{
   
     font-weight: 500;
@@ -1600,8 +1606,8 @@ border-bottom: 2px solid black;
   }
 
   footer div hr{
-    width: initial;
-    margin-right: 23px;
+   
+    display: none
   }
  
   
@@ -1656,10 +1662,12 @@ border-bottom: 2px solid black;
 
 .Follow-us .linkdin{
   font-size: 40px;
-  padding-top: 15px;
+  
 }
 footer h2{
  font-size: 22px;
+ display: flex;
+ justify-content: space-between;
 }
 
 footer li {
@@ -1668,7 +1676,7 @@ footer li {
 
 footer .Follow-us{
   height: 3rem;
-  /* padding-top: 35px; */
+  padding-top: 15px;
 }
 
 footer .Follow-us hr{
@@ -1678,9 +1686,6 @@ footer .Follow-us hr{
 
 
 
-footer .Follow-us h2::after{
-  content: ':';
-}
 
 .product-list {
   display: none; /* Default state: hidden */
@@ -1717,11 +1722,26 @@ footer .Follow-us h2::after{
 footer div{
   height: auto;
   width: 100%;
+  padding-bottom: 20px;
+}
+
+footer div:not(.Follow-us) > h2::after {
+  content: "";
+  display: block;
+  background: url('../images/footers-arrows.svg') center no-repeat;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-size: 20px;
+}
+
+
+footer div ul{
+  padding-top: 10px;
 }
 
 footer{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 55px;
 }
 
