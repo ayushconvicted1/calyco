@@ -1783,6 +1783,101 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
  
+
+  
+footer h2{
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ footer li {
+   font-size: 15px;
+ }
+ 
+ footer .Follow-us{
+   height: 3rem;
+   padding-top: 15px;
+ }
+ 
+ footer .Follow-us hr{
+   display: block;
+   
+ }
+ 
+ 
+ 
+ 
+ .product-list {
+   display: none; /* Default state: hidden */
+ }
+ 
+ .product-list.show {
+   display: block; /* Show the product list when showProductList is true */
+ }
+ 
+ .email-list {
+   display: none; /* Default state: hidden */
+ }
+ 
+ .email-list.show {
+   display: block; /* Show the email list when showProductList is true */
+ }
+ 
+ .career-list{
+   display: none;
+ }
+ 
+ .career-list.show{
+   display: block;
+ }
+ 
+ .Learn-list{
+   display: none;
+ }
+ 
+ .Learn-list.show{
+   display: block;
+ }
+
+
+  footer div{
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+  footer div:not(.Follow-us) > h2::after {
+    content: "";
+    display: block;
+    background: url('../images/footers-arrows.svg') center no-repeat;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-size: 20px;
+  }
+  
+  
+  footer div ul{
+    padding-top: 10px;
+  }
+  
+  footer{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 55px;
+  }
+  
+  .follow-button{
+    font-size: 28px;
+  }
+  
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
   .faq-box {
     width: 90%;
   }
