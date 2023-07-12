@@ -61,7 +61,7 @@ function Home() {
     showBorder={true} 
     />
     <Faq_questions
-    question="Why Choose Calyco Products?"
+    question="Why Choose Calyco Prodcts?"
     answer="We are the top producer of CPC in the state of Maharashtra, India
     Our clients include some of the top steel, aluminum, and cement manufacturers in India, as well as various importers globally.
     We are committed to providing high-quality products and excellent customer service to meet the needs of our clients."
