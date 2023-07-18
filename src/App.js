@@ -13,6 +13,7 @@ import Product from './components/pages/Product';
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Carbonproducts from './components/pages/home page product/Carbonproducts';
 import Trading from './components/pages/home page product/Trading';
+import Join_team from './components/pages/Join our team/Join_team';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/aboutus' element={<Aboutus/>}/>
           <Route path='/FAQ' element={<FaQ/>}/>
+          <Route path='/Join-our-team' element={<Join_team/>}/>
           <Route path='/product/carbonProduct' element={<Carbonproducts/>} />
           <Route path='/product/TradingProduct' element={<Trading/>} />
           

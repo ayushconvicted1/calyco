@@ -28,6 +28,7 @@ import PelletCokeTable from './Product tables/PelletCokeTable';
 import DetailComponent from './DetailComponent';
 import { useRef } from 'react';
 import { FiChevronRight,FiChevronLeft } from 'react-icons/fi';
+import Join_team from './Join our team/Join_team';
 
 
 function Product() {
@@ -284,7 +285,8 @@ const product = productData.find((product) => product.product_url=== productName
             {tableComponent}
           </div>
         
-    
+       <Join_team/>
+
 
     </div>
   )

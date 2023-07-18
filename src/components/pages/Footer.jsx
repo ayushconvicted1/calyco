@@ -84,7 +84,7 @@ function Footer() {
           <hr/>
           <ul className={showcareerslist ? 'career-list show' : 'career-list'} >
           <li>
-            <Link className='custom-footer-Link'>Join Our Team</Link>
+            <Link to="/join-our-team" className='custom-footer-Link'>Join Our Team</Link>
           </li>
           </ul>
         </div>

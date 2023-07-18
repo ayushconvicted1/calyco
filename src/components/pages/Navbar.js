@@ -143,8 +143,8 @@ const Navbar = () => {
           </li>
           {!showProductMenu && (
             <>
-             <Link className="custom-link">
-              <li className={`nav-text ${showProductMenu ? 'hide' : ''}`}>
+             <Link to="/Join-our-team" className="custom-link">
+              <li className={`nav-text ${showProductMenu ? 'hide' : ''}`} onClick={showSidebar}>
                 <img className="navbar-icons" src={team} />
               <span>  Join our team</span>
               </li>

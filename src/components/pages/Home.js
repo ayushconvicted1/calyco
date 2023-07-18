@@ -12,6 +12,7 @@ import {faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Faq_questions from './home page product/Faq_questions'
 import { Link } from 'react-router-dom'
 
+
 function Home() {
  
   return (
@@ -87,6 +88,8 @@ function Home() {
     showBorder={true} 
    />
 
+  
+
  </div>
   
     <div>
@@ -94,6 +97,7 @@ function Home() {
     </div>
       
     </div>
+    
     </>
   )
 }

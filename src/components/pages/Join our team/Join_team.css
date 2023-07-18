@@ -1,0 +1,166 @@
+.join-card-container{
+  margin: auto;
+  width: 100%;
+}
+
+.Join-page{
+      width: 85%;
+    padding: 20px 0px 40px 7%;
+    font-size: 33px;
+    font-family: Neology-Deco-W03-Medium;
+    font-weight: lighter;
+}
+
+.Join-page h1{
+  font-weight: lighter;
+  font-size: clamp(39px, 2vw, 50px); 
+}
+.Join-page h2{
+  font-size: 28px;
+  font-weight: lighter;
+  padding-top: 35px;
+  font-family: 'Neology-Deco-W03-Regular';
+}
+
+.Join-page p{
+  font-size: 13px;
+  padding-bottom: 30px;
+  padding-top: 28px;
+  color: #757575;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+
+.join-card-image{
+  width: 100%;
+  /* height: 100%; */
+  object-fit: contain;
+}
+
+.join-form{
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Neology-Deco-W03-Regular';
+  font-size: 20px;
+  background-color: #F7F7F7;
+}
+
+.join-form .join-left-part{
+  margin: auto;
+  width: 40%;
+
+}
+
+.join-left-part p{
+  padding-bottom: 30px;
+  font-size: 35px;
+  font-size: clamp(24px, 4vw,35px);
+ 
+}
+
+.join-form span{
+  color:#FE5E00;
+}
+
+.join-left-part .join-email-box{
+  padding-top: 25px;
+  align-items: center;
+  display: flex;
+  height: 4rem;
+}
+
+.join-right-part img{
+  width: 100%;
+}
+
+.join-email-box .email-line{
+  background-color: #9C5755;
+    width: 9px;
+    border-radius: 10px;
+    height: inherit;
+    margin-right: 25px;
+}
+
+.Join-heading-para div p {
+  text-align: center;
+}
+.Join-heading-para div:nth-child(1){
+padding-top: 0;
+}
+
+.Join-heading-para div:nth-child(2){
+  background-color:#EBEFF0
+}
+.Join-heading-para div:nth-child(3){
+  background-color: #E8E8E8
+}
+
+
+
+.Join-heading-para div{
+  margin-top: 20px;
+  /* border: 2px solid black; */
+  font-size: 20px;
+  padding: 5% 10% 5% 10%;
+  font-family: 'Neology-Deco-W03-Regular';
+  font-size: 30px;
+  
+}
+
+.quatation-mark{
+  height: 90px;
+  
+}
+
+
+.quation-mark-box{
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.Join-heading-para div .para-highlights{
+  color: #FE5E00;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .Join-page h2{ font-weight: bold;}
+  .join-form{ flex-direction: column;
+  }
+
+  .join-form .join-left-part{
+    order: 1;
+  }
+  .join-form .join-left-part{
+    width: auto;
+    padding: 8%;
+}
+ .join-left-part .join-email-box{
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+.join-email-box .email-line{
+  width: 28%;
+  height: 9px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.Join-heading-para div{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.quatation-mark{
+  height: 54px;
+}
+.join-left-part p{
+  font-weight: bold;
+}
+
+}
