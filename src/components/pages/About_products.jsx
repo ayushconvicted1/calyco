@@ -47,6 +47,66 @@ function About_products() {
     title={title}
     answer_styling={answer_styling}
     />
+     
+     <Faq_questions
+    question="What is difference between Tamping and Anode paste ?"
+    answer="Tamping paste and anode paste are both types of pastes used in the aluminum smelting industry, but they serve different purposes.
+    Tamping paste, also known as ramming paste or ramming mass, is used for tamping or filling the gaps or spaces between the carbon blocks or electrodes in an aluminum electrolysis cell.
+    Anode paste, on the other hand, is used as the material for the anodes in the aluminum electrolysis cell. An anode is the positive electrode, and it plays a crucial role in the production of aluminum through the electrochemical process."
+    showBorder={true} 
+    title={title}
+    answer_styling={answer_styling}
+   />
+    <Faq_questions
+    question="Can Calcined Pet Coke be customized based on specific requirements ?"
+    answer="The CPC can be further processed in an anode baking oven in order to produce anode coke of desired shape and physical properties.
+    To meet customers specifications,the properties of CPC like Sulphur, Partical size distribution and Ash content can be tailored."
+    showBorder={true} 
+    title={title}
+    answer_styling={answer_styling}
+   />
+    <Faq_questions
+    question="What is the melting point of calcined petroleum coke ?"
+    answer="Typically ranges from 1300°C to 1400°C (2372°F to 2552°F). The precise melting point can vary depending on the specific composition and quality of the CPC."
+    showBorder={true}  
+    title={title}
+    answer_styling={answer_styling}
+   />
+    <Faq_questions
+    question="Is calcined petroleum coke Flammable?"
+    answer="Calcined petroleum coke is not considered flammable under normal conditions. It is a carbonaceous material that has undergone high-temperature treatment to remove volatile components, including any flammable substances. As a result, the remaining carbon content in calcined petroleum coke is relatively stable and non-flammable."
+    showBorder={true}  
+    title={title}
+    answer_styling={answer_styling}
+   />
+    <Faq_questions
+    question="Why is Pet coke used in cement industry ?"
+    answer="Pet coke is a high-energy fuel with low Ash content, it is easily available, cost effective, stable and consistent combustion."
+    showBorder={true} 
+    title={title}
+    answer_styling={answer_styling}
+   />
+     <Faq_questions
+    question="Is Pet coke explosive?"
+    answer="Pet coke, or petroleum coke, is not inherently explosive. It is a solid carbonaceous material and does not possess the same explosive characteristics as gases or volatile substances."
+    showBorder={true} 
+    title={title}
+    answer_styling={answer_styling}
+   />
+     <Faq_questions
+    question="Does India import Pet coke?"
+    answer="CPC is not considered flammable under normal conditions. It is a carbonaceous material that has undergone high-temperature treatment to remove volatile components, including any flammable substances. As a result, the remaining carbon content in CPC is relatively stable and non-flammable."
+    showBorder={true}  
+    title={title}
+    answer_styling={answer_styling}
+   />
+     <Faq_questions
+    question="What are the environmental impact of Pet coke ?"
+    answer="Air pollution, Green house gas emissions, Particulate matter emission, Water and Soil contamination and Waste generations."
+    showBorder={false} 
+    title={title}
+    answer_styling={answer_styling}
+   />
         </div>
   )
 }

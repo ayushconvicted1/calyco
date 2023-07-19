@@ -285,7 +285,7 @@ const product = productData.find((product) => product.product_url=== productName
             {tableComponent}
           </div>
         
-       <Join_team/>
+     
 
 
     </div>
