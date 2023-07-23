@@ -4,6 +4,8 @@ import join_cover from '../../images/Join_page_cover.jpg';
 import join_us from '../../images/join-us.jpg'
 import quatation from '../../images/quatation.png'
 import { Link } from 'react-router-dom';
+import join_email_icon from '../../images/join-email-icon.png'
+
 const Join_team = () => {
   return (
     <div style={{position:"relative"}}>
@@ -64,9 +66,10 @@ const Join_team = () => {
      <p> <span>Be a part </span>of a dynamic team that is shaping the future of the carbon-based products industry.</p>
 
      <div className='join-email-box'>
+     <span className='join-email-icon'><img src={join_email_icon}/></span>
       <div className='email-line'></div>
       <h2>
-        <Link style={{textDecoration:"none",color:"inherit"}} to={'mailto:@jobs@calyco.co'}>Email:jobs@calyco.co</Link></h2>
+        <Link style={{textDecoration:"none",color:"inherit"}} to={'mailto:@jobs@calyco.co'}> <label className='join-email-text'>Email :</label>jobs@calyco.co</Link></h2>
      </div>
     </div>
    

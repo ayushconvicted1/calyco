@@ -155,11 +155,31 @@ padding-top: 0;
   display: none;
 }
 
+.join-email-icon{
+  display: none;
+}
+
+.join-email-text{
+  color: black;
+}
+
 
 
 @media only screen and (max-width: 480px) {
   .Join-page h2{ font-weight: bold;
   padding-top: 50px;}
+
+  .join-email-icon{
+    display: block;
+  }
+  .join-email-text{
+    display: none;
+  }
+  .email-line{
+    width: 23%;
+    height: 8px;
+  }
+
   .Join-page h1{
     padding-bottom: 30px;
   }
@@ -168,6 +188,7 @@ padding-top: 0;
   }
   .join-form{ flex-direction: column;
     position: relative;
+    margin-bottom: 0;
   }
 
   .mobile-view-bottam-div,.mobile-view-top-div{
@@ -210,6 +231,7 @@ padding-top: 0;
   .join-form .join-left-part{
     width: auto;
     padding: 8%;
+    height: 22rem;
 }
  .join-left-part .join-email-box{
   display: block;
@@ -226,6 +248,7 @@ padding-top: 0;
 .Join-heading-para div{
   font-size: 24px;
   font-weight: bold;
+  padding: 60px;
 }
 
 .quatation-mark{
