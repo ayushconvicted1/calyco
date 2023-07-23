@@ -3,41 +3,155 @@ import './Table.css'; // Import the CSS file
 
 function Cpc() {
   return (
-    <div className='table'>
-      <table className="custom-table"> {/* Add the CSS class */}
-        <thead>
-          <tr>
-            <th className="align-right">Specification</th>
-            <th>Range</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th className='align-left'>Fixed Carbon</th>
-            <td>98.5% min</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Ash</th>
-            <td>0.8% max</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Volatiles</th>
-            <td>0.5% max</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Sulfur</th>
-            <td>0.7% max</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Moisture</th>
-            <td>0.5% max</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Grain Size</th>
-            <td>Customized</td>
-          </tr>
-        </tbody>
-      </table>
+    <div>
+     <h2 className='tables-headings'>Calcined Petroleum Coke</h2>
+      <div className='table'>
+        <table className="custom-table">
+          <thead>
+            <tr>
+              <th>Composition</th>
+              <th>Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fixed carbon</td>
+              <td>98-99%</td>
+            </tr>
+            <tr>
+              <td>Sulfur</td>
+              <td>0.5-3%</td>
+            </tr>
+            <tr>
+              <td>Ash</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Volatile matter</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Moisture</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Grain Size</td>
+              <td>Customized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 className='tables-headings'>Calcined Petroleum Coke for steelmaking and iron foundries / titanium dioxide production / carbon raiser or carbon additive:</h2>
+      <div className='table'>
+        <table className="custom-table">
+          <thead>
+            <tr>
+              <th>Composition</th>
+              <th>Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fixed carbon</td>
+              <td>98-99%</td>
+            </tr>
+            <tr>
+              <td>Sulfur</td>
+              <td>0.5-3%</td>
+            </tr>
+            <tr>
+              <td>Ash</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Volatile matter</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Moisture</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Grain size</td>
+              <td>Customized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 className='tables-headings'>Calcined Petroleum Coke for aluminum smelting:</h2>
+      <div className='table'>
+        <table className="custom-table">
+          <thead>
+            <tr>
+              <th>Composition</th>
+              <th>Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fixed carbon</td>
+              <td>98.5-99.5%</td>
+            </tr>
+            <tr>
+              <td>Sulfur</td>
+              <td>1-3%</td>
+            </tr>
+            <tr>
+              <td>Ash</td>
+              <td>0.1-0.5%</td>
+            </tr>
+            <tr>
+              <td>Volatile matter</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Moisture</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Grain size</td>
+              <td>Customized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 className='tables-headings'>Calcined Petroleum Coke for graphite electrode production:</h2>
+      <div className='table'>
+        <table className="custom-table">
+          <thead>
+            <tr>
+              <th>Composition</th>
+              <th>Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fixed carbon</td>
+              <td>98-99%</td>
+            </tr>
+            <tr>
+              <td>Sulfur</td>
+              <td>0.05-0.5%</td>
+            </tr>
+            <tr>
+              <td>Ash</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Volatile matter</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Moisture</td>
+              <td>0.5-1%</td>
+            </tr>
+            <tr>
+              <td>Grain size</td>
+              <td>Customized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

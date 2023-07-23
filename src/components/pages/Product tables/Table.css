@@ -11,6 +11,13 @@
     text-align: left;
   }
   
+  .tables-headings{
+    font-family: 'Neology-Deco-W03-Medium';
+    padding-bottom: 15px;
+    padding-top: 18px;
+    font-size: 27px;
+    color: #48565e;
+  }
   
 
   
@@ -18,7 +25,7 @@
     font-family: 'Neology-Deco-W03-medium';
     font-weight: bold;
     font-size: 19px;
-
+  overflow: auto;
     width: 100%;
    
     margin-bottom: 13px;

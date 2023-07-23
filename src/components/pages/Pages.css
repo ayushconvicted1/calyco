@@ -1148,12 +1148,20 @@ border-bottom: 2px solid black;
 
 }
 
-.Main-graph-container h1{
+/* .Main-graph-container h1{
   font-weight: lighter;
   color: #5A7D9F;
   font-size: 23px;
   padding-bottom: 18px;
 
+} */
+
+.Main-graph-container h1{
+  font-weight: lighter;
+  color: #5A7D9F;
+  font-size: 23px;
+  height: 100px;
+  padding-bottom: 0px
 }
 
 .container{
@@ -1171,15 +1179,15 @@ border-bottom: 2px solid black;
 
 
 .container .boxes{
-  width: 60px;
+  width: 50px;
   border-radius: 43px;
-  margin: 30px 8px 8px 9px;
+  margin: 30px 12px 8px 12px;
   background-color: #EBEFF0;
   align-items: self-end;
   display: flex;
   padding: 10px;
   flex-direction: column-reverse;
-  height: 75%;
+  height: 16rem;
   align-items: center;
  
 }
@@ -1212,8 +1220,14 @@ border-bottom: 2px solid black;
 .container div{
   display: flex;
   flex-direction: column;
+  width: 80px;
 
 }
+
+.graph-box{
+  display: flex;
+}
+
 
 .container div span{
   text-align: center;
@@ -1224,7 +1238,7 @@ border-bottom: 2px solid black;
 
 .container .boxes span{
   color: #9C5755;
-  margin: auto;
+  margin: unset;
   margin-bottom: 15px;
   font-weight: lighter;
 

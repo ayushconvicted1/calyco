@@ -3,41 +3,99 @@ import './Table.css'; // Import the CSS file
 
 function CarbonRaiser() {
   return (
-    <div className='table'>
-      <table className="custom-table"> {/* Add the CSS class */}
-        <thead>
-          <tr>
-            <th className="align-right">Specification</th>
-            <th>Range</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th className='align-left'>Fixed Carbon</th>
-            <td>90-98%</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Sulfur</th>
-            <td>0.1-0.6%</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Ash</th>
-            <td>0.5-8%</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Volatile Matter</th>
-            <td>0.5-1.5%</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Moisture</th>
-            <td>0.5-1%</td>
-          </tr>
-          <tr>
-            <th className='align-left'>Grain Size</th>
-            <td>Customized</td>
-          </tr>
-        </tbody>
-      </table>
+    <div>
+      {/* Table 1: Graphite Carbon Raiser */}
+      <h2 className='tables-headings'>Graphite Carbon Raiser</h2>
+      <div className='table'>
+        <table className="custom-table">
+          <thead>
+            <tr>
+              <th className="align-right">Composition</th>
+              <th>Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th className='align-left'>Carbon Content</th>
+              <td>95% to 99%</td>
+            </tr>
+            <tr>
+              <th className='align-left'>Ash Content</th>
+              <td>Usually below 1%</td>
+            </tr>
+            <tr>
+              <th className='align-left'>Volatile Matter</th>
+              <td>Generally below 1%</td>
+            </tr>
+            <tr>
+              <th className='align-left'>Particle Size</th>
+              <td>Varies or Customized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* Table 2: Petroleum Coke Carbon Raiser */}
+      <h2 className='tables-headings'>Petroleum Coke Carbon Raiser</h2>
+      <div className='table'>
+        <table className="custom-table">
+          <thead>
+            <tr>
+              <th className="align-right">Composition</th>
+              <th>Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th className='align-left'>Carbon Content</th>
+              <td>85% to 95%</td>
+            </tr>
+            <tr>
+              <th className='align-left'>Ash Content</th>
+              <td>Usually below 1%</td>
+            </tr>
+            <tr>
+              <th className='align-left'>Volatile Matter</th>
+              <td>Generally below 15%</td>
+            </tr>
+            <tr>
+              <th className='align-left'>Particle Size</th>
+              <td>Varies or Customized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* Table 3: Coal Base Carbon Raiser */}
+      <h2 className='tables-headings'>Coal Base Carbon Raiser</h2>
+      <div className='table'>
+        <table className="custom-table">
+          <thead>
+            <tr>
+              <th className="align-right">Composition</th>
+              <th>Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th className='align-left'>Carbon Content</th>
+              <td>75% to 90%</td>
+            </tr>
+            <tr>
+              <th className='align-left'>Ash Content</th>
+              <td>Usually below 5%</td>
+            </tr>
+            <tr>
+              <th className='align-left'>Volatile Matter</th>
+              <td>Generally below 25%</td>
+            </tr>
+            <tr>
+              <th className='align-left'>Particle Size</th>
+              <td>Varies or Customized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

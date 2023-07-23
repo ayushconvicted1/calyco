@@ -6,12 +6,14 @@ import quatation from '../../images/quatation.png'
 import { Link } from 'react-router-dom';
 const Join_team = () => {
   return (
-    <div>
+    <div style={{position:"relative"}}>
        <div className='Join-page'>
-        <p>Contact us</p>
+        <p>Careers</p>
         <h1>Are you a talented individual with a passion for <span style={{color:"#9C5755"}}>innovation and excellence?</span></h1>
+        <div className='Top-para-div'> </div>
         <h2>Calyco is always searching for individuals who share our commitment to creativity and growth, and who are eager to <span style={{color:"#9C5755"}}>join our team! </span> </h2>
       </div>
+      <div className='Top-left-div'> </div>
     <div className="join-card-container">
       
       <img 
@@ -19,6 +21,7 @@ const Join_team = () => {
         src={join_cover}
       />
     </div>
+    <div className='bottam-right-div'></div>
  
    <div className='Join-heading-para'>
     <div className='quatation-para' style={{paddingBottom:"60px"}}>
@@ -53,6 +56,9 @@ const Join_team = () => {
    </div>
 
     <div className='join-form'>
+      <div className='mobile-view-top-div'></div>
+      
+    
     <div className='join-left-part'>
      <p> Join us at <span>Calyco.</span></p>
      <p> <span>Be a part </span>of a dynamic team that is shaping the future of the carbon-based products industry.</p>
@@ -63,10 +69,12 @@ const Join_team = () => {
         <Link style={{textDecoration:"none",color:"inherit"}} to={'mailto:@jobs@calyco.co'}>Email:jobs@calyco.co</Link></h2>
      </div>
     </div>
-
+   
     <div className='join-right-part'>
  <img src={join_us}/>
+ <div className='mobile-view-bottam-div'></div>
     </div>
+    
     </div>
        
     </div>

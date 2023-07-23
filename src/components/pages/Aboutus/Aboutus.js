@@ -11,6 +11,17 @@ import induction from '../../images/induction-stove.png'
 import money from '../../images/money.png'
 import train_tracks from '../../images/train-tracks.png'
 import HelpCenterForm from '../HelpCenterForm';
+import Cpc_graph from '../graphs/Cpc_graph';
+import CalcinedAnthraciteGraph from '../graphs/CalcinedAnthraciteGraph';
+import CarbonAnodePasteGraph from '../graphs/CarbonAnodePasteGraph';
+import CarbonRiserGraph from '../graphs/CarbonRiserGraph';
+import CarbonElectrodePasteGraph from '../graphs/CarbonElectrodePasteGraph';
+import CarbonTampingPasteGraph from '../graphs/CarbonTampingPasteGraph';
+import GraphiteFinesGraph from '../graphs/GraphiteFinesGraph';
+import CoalGraph from '../graphs/CoalGraph';
+import FerroAlloysGraph from '../graphs/FerroAlloysGraph';
+import PelletCokeGraph from '../graphs/PelletCokeGraph';
+import MetallurgicalCokeGraph from '../graphs/MetallurgicalCokeGraph';
 
 
 
@@ -82,7 +93,7 @@ Infrastructure</h2>
     </p>
   </div>
 </div>
-{/* <HelpCenterForm/> */}
+
     </div>
   )
 }

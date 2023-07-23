@@ -29,6 +29,17 @@ import DetailComponent from './DetailComponent';
 import { useRef } from 'react';
 import { FiChevronRight,FiChevronLeft } from 'react-icons/fi';
 import Join_team from './Join our team/Join_team';
+import Cpc_graph from './graphs/Cpc_graph';
+import CalcinedAnthraciteGraph from './graphs/CalcinedAnthraciteGraph';
+import CarbonRiserGraph from './graphs/CarbonRiserGraph';
+import CarbonElectrodePasteGraph from './graphs/CarbonElectrodePasteGraph';
+import CarbonTampingPasteGraph from './graphs/CarbonTampingPasteGraph';
+import CoalGraph from './graphs/CoalGraph';
+import FerroAlloysGraph from './graphs/FerroAlloysGraph';
+import MetallurgicalCokeGraph from './graphs/MetallurgicalCokeGraph';
+import AmorphousGraphiteGraph from './graphs/AmorphousGraphiteGraph';
+import PelletCokeGraph from './graphs/PelletCokeGraph';
+import CarbonAnodePasteGraph from './graphs/CarbonAnodePasteGraph';
 
 
 function Product() {
@@ -102,49 +113,64 @@ const product = productData.find((product) => product.product_url=== productName
   }
 
   let tableComponent;
+  let GraphComponent;
 
   switch (product.id) {
     case 1:
       tableComponent = <Cpc />;
+      GraphComponent= <Cpc_graph/>
+
       break;
     case 2:
         tableComponent = <CalcinedAnthraciteTable/>;
+        GraphComponent=<CalcinedAnthraciteGraph/>
         break;
     case 3:
       tableComponent = <Carbon_anode_paste />;
+      GraphComponent=<CarbonAnodePasteGraph/>
       break;
     case 4:
       tableComponent = <CarbonRaiser />;
+      GraphComponent=<CarbonRiserGraph/>
       break;
     case 5:
       tableComponent = <CarbonElectrode />;
+      GraphComponent=<CarbonElectrodePasteGraph/>
       break;
     case 6:
       tableComponent = <CarbonTampingpaste />;
+      GraphComponent=<CarbonTampingPasteGraph/>
       break;
     case 7:
       tableComponent = <GraphiteGranulesFines />;
+      GraphComponent=<AmorphousGraphiteGraph/>
       break;
     case 8:
         tableComponent = <Coal/>;
+        GraphComponent=<CoalGraph/>
       break;
     case 9:
         tableComponent = <FerroAlloysTable />;
+        GraphComponent=<FerroAlloysGraph/>
       break;
     case 10:
       tableComponent = <MetallurgicalCokeTable/>;
+      GraphComponent=<MetallurgicalCokeGraph/>
       break;
     case 11:
         tableComponent = <AmorphousGraphiteTable/>;
+        GraphComponent=<AmorphousGraphiteGraph/>
         break;
     case 12:
           tableComponent = <PelletCokeTable/>;
+          GraphComponent=<PelletCokeGraph/>
           break;
 
  
     // Add cases for other product IDs and corresponding table components
     default:
       tableComponent = null;
+      GraphComponent=null;
   }
 
   const show_slide_table=()=>setShowTable(!showTable)
@@ -181,7 +207,7 @@ const product = productData.find((product) => product.product_url=== productName
 
 <div className='Graph-page'   onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div className='Graph-flex-box' ref={carouselItemsRef} >
-  {product.Graphdata.map((data, index) => (
+  {/* {product.Graphdata.map((data, index) => (
     <DetailComponent
       key={index}
       product_category={data.product_category}
@@ -191,7 +217,9 @@ const product = productData.find((product) => product.product_url=== productName
       Sulfur={data.Sulfur}
       Moisture_content={data.Moisture_content}
     />
-  ))}
+  ))} */}
+
+  {GraphComponent}
 </div>
 <div className="carousel-buttons">
         <button
