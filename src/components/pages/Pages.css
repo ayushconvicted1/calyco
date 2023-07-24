@@ -1253,7 +1253,9 @@ border-bottom: 2px solid black;
 @media only screen and (max-width: 767px) {
 
   /* product table */
-
+.container div{
+  width: 66px;
+}
   .product-table{
     width: 100%;
     padding: 10px;

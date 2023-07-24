@@ -17,8 +17,8 @@ function About_products() {
     <div>
           <Faq_questions
     question="What is the difference between CPC and Met Coke?"
-    answer="CPC is produced by heating raw petroleum coke to remove moisture and volatile matter. It results in a high-purity carbon product used as a key  raw material in the production of aluminum, steel, and other carbon products.
-    Met coke is produced by heating coal in the absence of air to remove moisture and volatile matter. It results in a carbon-rich product used as a  fuel in various industrial processes, such as steelmaking, iron production, and chemical manufacturing."
+    answer="CPC is produced by heating raw petroleum coke to remove moisture and volatile matter. It results in a high-purity carbon product used as a key raw material in the production of aluminum, steel, and other carbon products.
+    Met coke is produced by heating coal in the absence of air to remove moisture and volatile matter. It results in a carbon-rich product used as a  fuel in various industrial processes, such as steelmaking, iron production, and chemical manufacturing."
     showBorder={true} 
     title={title}
     answer_styling={answer_styling}

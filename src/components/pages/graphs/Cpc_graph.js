@@ -12,7 +12,10 @@ function Cpc_graph() {
         { name: 'Ash', range: '0.5-1%', height: 120 },
         { name: 'Volatile Matter', range: '0.5-1%', height: 80 },
         { name: 'Moisture', range: '0.5-1%', height: 150 },
-        { name: 'Grain Size', range: 'Customized', height: 300 }
+        { name: 'Grain Size', range: 'Customized', height: 300 ,style: {
+          writingMode:"vertical-lr",
+          marginTop:"50px"
+         }}
       ]
     },
     {
@@ -23,7 +26,10 @@ function Cpc_graph() {
         { name: 'Ash', range: '0.1-0.5%', height: 140 },
         { name: 'Volatile Matter', range: '0.5-1%', height: 110 },
         { name: 'Moisture', range: '0.5-1%', height: 220 },
-        { name: 'Grain Size', range: 'Customized', height: 250 }
+        { name: 'Grain Size', range: 'Customized', height: 250 ,style: {
+          writingMode:"vertical-lr",
+          marginTop:"50px"
+         }}
       ]
     },
     {
@@ -34,7 +40,10 @@ function Cpc_graph() {
         { name: 'Ash', range: '0.5-1%', height: 180 },
         { name: 'Volatile Matter', range: '0.5-1%', height: 90 },
         { name: 'Moisture', range: '0.5-1%', height: 190 },
-        { name: 'Grain Size', range: 'Customized', height: 280 }
+        { name: 'Grain Size', range: 'Customized', height: 280 ,style: {
+          writingMode:"vertical-lr",
+          marginTop:"50px"
+         }}
       ]
     }
   ];
@@ -53,7 +62,7 @@ function Cpc_graph() {
                       className='child-box'
                       style={{ height: `${item.height}px` }}
                     ></div>
-                    <span>{item.range}</span>
+                    <span style={{...item.style}}>{item.range}</span>
                   </div>
                   <span>{item.name}</span>
                 </div>

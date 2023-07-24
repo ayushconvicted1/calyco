@@ -52,17 +52,6 @@ We are committed to providing high-quality products with excellent customer serv
     answer_styling={answer_styling}
    />
    
-  
-    {/* <Faq_questions
-    question="Does Calyco have a railway siding ?"
-    answer="	We pride ourselves on the fact that we have our very own private railway siding located in Butibori about 2 km from our factory. We have the ability to handle shipment sizes ranging from a 50 railcars to full unit trains of 120 railcars.
-    At Calyco, we have the capability to haul more than a million tons per year of various products, including petroleum coke, in key markets throughout India, Nepal and Bhutan.
-    With our varied portfolio of logistics services across product lines and geographical regions, as well as excellent relationships with many short line railroads, we are uniquely positioned to provide comprehensive and reliable solutions to meet all of our customers' rail requirements. 
-    We believe that our expertise in the railroad industry sets us apart, and we are dedicated to providing exceptional service to our customers."
-    showBorder={true}  
-    title={title}
-    answer_styling={answer_styling}
-   /> */}
     <Faq_questions
     question="Are there any environmental considerations related to Calcined Pet Coke ?"
     answer="We have insured proper precautions and safety measures because emissions from the combustion of petcoke can have impacts on human health and the environment, including the release of common pollutants, hazardous substances, and high levels of the greenhouse gas, carbon dioxide."
@@ -70,18 +59,7 @@ We are committed to providing high-quality products with excellent customer serv
     title={title}
     answer_styling={answer_styling}
    />
-   
-    {/* <Faq_questions
-    question="Does Calyco have a railway siding?"
-    answer="	We pride ourselves on the fact that we have our very own private railway siding located in Butibori about 2 km from our factory. We have the ability to handle shipment sizes ranging from a 50 railcars to full unit trains of 120 railcars.
-    At Calyco, we have the capability to haul more than a million tons per year of various products, including petroleum coke, in key markets throughout India, Nepal and Bhutan.
-    With our varied portfolio of logistics services across product lines and geographical regions, as well as excellent relationships with many short line railroads, we are uniquely positioned to provide comprehensive and reliable solutions to meet all of our customers' rail requirements. 
-    We believe that our expertise in the railroad industry sets us apart, and we are dedicated to providing exceptional service to our customers."
-    showBorder={false}  
-    title={title}
-    answer_styling={answer_styling}
-   />
-    */}
+  
       
     </div>
   )

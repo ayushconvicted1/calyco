@@ -10,7 +10,10 @@ function CarbonRiserGraph() {
         { name: 'Carbon Content', range: '95% to 99%', height: 250 },
         { name: 'Ash Content', range: 'Usually below 1%', height: 100 },
         { name: 'Volatile Matter', range: 'Generally below 1%', height: 70 },
-        { name: 'Particular Size', range: 'Varies or Customized', height: 180 },
+        { name: 'Particular Size', range: 'Varies or Customized', height: 180 ,style: {
+          writingMode:"vertical-lr",
+          marginTop:"50px"
+         }},
       ]
     },
     {
@@ -19,7 +22,10 @@ function CarbonRiserGraph() {
         { name: 'Carbon Content', range: '85% to 95%', height: 220 },
         { name: 'Ash Content', range: 'Usually below 1%', height: 100 },
         { name: 'Volatile Matter', range: 'Generally below 15%', height: 140 },
-        { name: 'Particular Size', range: 'Varies or Customized', height: 200 },
+        { name: 'Particular Size', range: 'Varies or Customized', height: 200  ,style: {
+          writingMode:"vertical-lr",
+          marginTop:"50px"
+         }},
       ]
     },
     {
@@ -28,7 +34,10 @@ function CarbonRiserGraph() {
         { name: 'Carbon Content', range: '75% to 90%', height: 180 },
         { name: 'Ash Content', range: 'Usually below 5%', height: 120 },
         { name: 'Volatile Matter', range: 'Generally below 25%', height: 160 },
-        { name: 'Particular Size', range: 'Varies or Customized', height: 220 },
+        { name: 'Particular Size', range: 'Varies or Customized', height: 220,style: {
+          writingMode:"vertical-lr",
+          marginTop:"50px"
+         } },
       ]
     },
   ];
@@ -47,7 +56,7 @@ function CarbonRiserGraph() {
                       className='child-box'
                       style={{ height: `${item.height}px` }}
                     ></div>
-                    <span>{item.range}</span>
+                    <span style={{...item.style}}>{item.range}</span>
                   </div>
                   <span>{item.name}</span>
                 </div>

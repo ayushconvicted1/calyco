@@ -12,7 +12,10 @@ function CalcinedAnthraciteGraph() {
         { name: 'Ash', range: '4-8%', height: 150 },
         { name: 'Volatile Matter', range: '0.5-1.5%', height: 80 },
         { name: 'Moisture', range: '0.5-1%', height: 180 },
-        { name: 'Grain Size', range: 'Customized', height: 300 }
+        { name: 'Grain Size', range: 'Customized', height: 300 ,style: {
+          writingMode:"vertical-lr",
+          marginTop:"50px"
+         }}
       ]
     },
     {
@@ -23,7 +26,10 @@ function CalcinedAnthraciteGraph() {
         { name: 'Ash', range: '4-8%', height: 130 },
         { name: 'Volatile Matter', range: '0.5-1.5%', height: 70 },
         { name: 'Moisture', range: '0.5-1%', height: 150 },
-        { name: 'Grain Size', range: 'Customized', height: 250 }
+        { name: 'Grain Size', range: 'Customized', height: 250 ,style: {
+          writingMode:"vertical-lr",
+          marginTop:"50px"
+         }}
       ]
     },
     {
@@ -34,7 +40,10 @@ function CalcinedAnthraciteGraph() {
         { name: 'Ash', range: '4-8%', height: 150 },
         { name: 'Volatile Matter', range: '0.5-1.5%', height: 70 },
         { name: 'Moisture', range: '0.5-1%', height: 180 },
-        { name: 'Grain Size', range: 'Customized', height: 270 }
+        { name: 'Grain Size', range: 'Customized', height: 270 , style: {
+         writingMode:"vertical-lr",
+         marginTop:"50px"
+        },}
       ]
     }
   ];
@@ -51,9 +60,9 @@ function CalcinedAnthraciteGraph() {
                   <div className='boxes'>
                     <div
                       className='child-box'
-                      style={{ height: `${item.height}px` }}
+                      style={{ height: `${item.height}px`}}
                     ></div>
-                    <span>{item.range}</span>
+                    <span style={{ ...item.style }} >{item.range}</span>
                   </div>
                   <span>{item.name}</span>
                 </div>
